@@ -1,0 +1,86 @@
+<!DOCTYPE hinhThucml>
+<hinhThucml lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta hinhThuctp-equiv="X-UA-Compatible" content="IE=edonGiae">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table,tr,th{
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>HÓa đơn Điện thoại </h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mã thuê bao:</th>
+                    <th><input type="text" id="MTB" value=""></th>
+                    <th>Số phút:</th>
+                    <th><input type="text" id="soPhut" value=""></th>
+                    <th>Hình thức:</th>
+                    <th><input type="text" id="hinhThuc" value=""></th>
+                </tr>
+                <tr>
+                    <th>Tiền nộp:</th>
+                    <th><input type="text" id="tienNop" value=""></th>
+                    <th>Đơn giá:</th>
+                    <th><input type="text" id="donGia" value=""></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th></th>  
+                    <th></th>
+                    <th><button id = "result">Kết quả</button></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <script>
+        const $ = document.querySelector.bind(document);
+        const MTB = $('#MTB');
+        const soPhut = $('#soPhut');
+        const hinhThuc = $('#hinhThuc');
+        const tienNop = $('#tienNop');
+        const donGia = $('#donGia');
+        const result = $('#result');
+
+        result.onclick = e => {
+            if(MTB.value != '' && soPhut.value != '' && hinhThuc.value != '' && donGia.value != '')
+                sumTienNop(Number.parseFloat(soPhut.value),Number.parseFloat(donGia.value),hinhThuc)
+            else 
+                alert("Kiểm tra lại phần nhập đủ thông tin")
+        }
+
+        function sumTienNop (soPhut,donGia,hinhThuc) {
+            if(hinhThuc.value =='TT' || hinhThuc.value =='Trả trước' || hinhThuc.value =='trả trước' || hinhThuc.value =='tt')
+                tienNop.value = soPhut * donGia
+            else if(hinhThuc.value =='TS' || hinhThuc.value =='Trả sau' || hinhThuc.value =='trả sau'|| hinhThuc.value =='ts'){
+                if(soPhut<=100){
+                    tienNop.value = soPhut * donGia
+                    alert('Bạn là khác Thường')
+                }
+                else{
+                    tienNop.value =(100 * donGia) + (soPhut-100)*(donGia/2)
+                    alert('Bạn là Khách VIP')
+                } 
+            }
+            else
+                alert('Nhập Lại phương trước thanh toàn : Trả trước (TT) or Trả sau (TS) ^-^')
+
+
+
+        }
+
+    </script>
+</body>
+</hinhThucml>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Căn Bậc 2</title>
+
+    <style>
+        label,input{
+            margin:10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h3>Căn bậc 2 :  ax<sup>2</sup>+bx+c = 0 </h3>
+    <label for="a">Nhap a : </label>
+    <input type="text" placeholder="Nhap a ..." value="" id = "a"> <br>
+    <label for="b">Nhap b : </label>
+    <input type="text" placeholder="Nhap b ..." value="" id = "b"> <br>
+    <label for="c">Nhap c : </label>
+    <input type="text" placeholder="Nhap c ..." value="" id = "c"> <br>
+    <label for="result">result : </label>
+    <input type="text" placeholder="result ..." value="" id = "result">
+    <br>
+    <button id="submit">submit</button>
+    <button id="reset">reset</button>
+    
+    <script>
+        const $ = document.querySelector.bind(document);
+        const a = $('#a');
+        const b = $('#b');
+        const c = $('#c');
+        const result = $('#result');
+        const submit = $('#submit');
+        const reset = $('#reset');
+        submit.onclick = function () {
+            const A = parseInt(a.value)
+            const B = parseInt(b.value)
+            const C = parseInt(c.value)
+            const deta = (B * B) - (4 *A *C);
+            const x1 = ((-B-Math.sqrt(deta))/(2*A)).toFixed(3)
+            const x2 = ((-B+Math.sqrt(deta))/(2*A)).toFixed(3);
+            const x3 = ((-B)/(2*A)).toFixed(3);
+            if(deta<0)
+                result.value = "vô nghiệm";
+            else if(deta==0)
+                result.value = `x1 = x2 = ${x3}`
+            else {
+                result.value = `x1 = ${x1} , x2 = ${x2}`
+            }
+        }
+        reset.onclick = function() {
+            a.value = null;
+            b.value = null;
+            c.value = null;
+            result.value = null;
+        }
+    </script>
+
+</body>
+</html>

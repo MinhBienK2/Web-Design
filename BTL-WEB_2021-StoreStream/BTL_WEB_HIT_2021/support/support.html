@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- CSS bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- slick -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <link rel="stylesheet" href="./css/grid.css" /> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="../css/styleHeader.css" />
+        <!-- <link rel="stylesheet" href="./css/styleSearch.css"> -->
+        <!-- <link rel="stylesheet" href="./css/styleMain.css"> -->
+        <link rel="stylesheet" href="./cssSupport/reponSupport.css">
+        <link rel="stylesheet" href="Support.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+        <title>Store Stream</title>
+    </head>
+    <body>
+        <!-- start header -->
+        <div class="header">
+            <div class="grid wide header-grid">
+                <div class="row header-row">
+                    <!-- <div class="col li-12 m-12 c-12 header-col"> -->
+                    <div class="col col-lg-12 col-md-12 col-sm-12 header-col ">
+                        <!-- start nav mobile -->
+                        <!-- bars mobile -->
+                        <div class="header__icon-bars">
+                            <label for="check">
+                                <i class="fas fa-bars"> </i>
+                            </label>
+                            <input
+                                type="checkbox"
+                                id="check"
+                                name="checkbox"
+                                hidden
+                            />
+                            <label for="check" class="background-black"></label>
+                            <ul id="header__bars-nav">
+                                <li class = "header__bars_nav-border"><a href="">Login</a></li>
+                                <!-- Accordion Store -->
+                                <li class = "accordion-header header__bars_nav-border " id="headingTwo">
+                                    <a class="accordion-button collapsed nav-accordion" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" href="">Store</a>
+                                </li>
+                                  <ul class="accordion-collapse collapse nav-accordion" id="collapseTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <li class="accordion-body"><a href="../index.html">Home</a></li>
+                                    <li class="accordion-body"><a href="">Discovery Queue</a></li>
+                                    <li class="accordion-body"><a href="">Wishlist</a></li>
+                                    <li class="accordion-body"><a href="../ThePointShop/thePointShop.html">points Shop</a></li>
+                                    <li class="accordion-body"><a href="">News</a></li>
+                                    <li class="accordion-body"><a href="../Stats/stats.html">Stats</a></li>
+                                  </ul>
+                                <!-- Accordion Communiry -->
+                                <li class = "accordion-header header__bars_nav-border" id="headingThree">
+                                    <a class="accordion-button collapsed nav-accordion" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" href="">Communiry</a>
+                                </li>
+                                  <ul class="accordion-collapse collapse nav-accordion" id="collapseThree" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <li class="accordion-body"><a href="../Community/community.html">Home</a></li>
+                                    <li class="accordion-body"><a href="">Discussions</a></li>
+                                    <li class="accordion-body"><a href="">Workshop</a></li>
+                                    <li class="accordion-body"><a href="">Market</a></li>
+                                    <li class="accordion-body"><a href="">Broadcasts</a></li>
+                                    <!-- <li class="accordion-body"><a href="">Stats</a></li> -->
+                                  </ul>
+                                <li class = "header__bars_nav-border"><a href="./support.html">Support</a></li>
+                                <li class="header__bars_nav-border" style="border: none; margin-top:0px;"><a href=""><span style="color: #8a8a8a;border: none;font-size: 0.75em;">Change language</span> </a></li>
+                                <li class="header__bars_nav-border" style="border: none; margin-top:0px;"><a href=""><span style="color: #8a8a8a;border: none;font-size: 0.75em;"> view desktop website</span></a></li>
+                                <div class="header__bars-nav-img">
+                                    <img src="	https://store.cloudflare.steamstatic.com/public/shared/images/responsive/logo_valve_footer.png" alt="">
+                                    <p>© Valve Corporation. Tous droits réservés. Toutes les marques commerciales sont la propriété de leurs titulaires aux États-Unis et dans d'autres pays. Politique de protection de la vie privée &nbsp| &nbsp Accord de souscription Steam Remboursements</p>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <!-- end nav mobile -->
+                        <a href="../index.html">
+                            <img
+                                src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
+                                alt=""
+                            />
+                        </a>
+                        <ul class="header__ul-one">
+                            <!-- Start list nav -->
+                            <li class="list-nar">
+                                <a href="">Store</a>
+                                <ul class="header__ul-two">
+                                    <li><a href="../index.html">Home</a></li>
+                                    <li><a href="">Discovery Queue</a></li>
+                                    <li><a href="">Wishlist</a></li>
+                                    <li><a href="../ThePointShop/thePointShop.html">points Shop</a></li>
+                                    <li><a href="">News</a></li>
+                                    <li><a href="../Stats/stats.html">Stats</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-nar">
+                                <a href="">Communiry</a>
+                                <ul class="header__ul-two">
+                                    <li><a href="../Community/community.html">Home</a></li>
+                                    <li><a href="">Discovery</a></li>
+                                    <li><a href="">Workshop</a></li>
+                                    <li><a href="">Market Shop</a></li>
+                                    <li><a href="">Broadcasts</a></li>
+                                </ul>
+                            </li>
+                            <!-- end list nav -->
+                            <li><a href="../about/about.html">About</a></li>
+                            <li><a href="./support.html">Support</a></li>
+                        </ul>
+                        <div class="header__login">
+                            <div class="header__login-install">
+                                <div class="install-icon">
+                                    <i style="
+                                    font-size: 17px;margin-right:5px;" class="fab fa-instalod"></i>
+                                </div>
+                                <p >Install Steam</p>
+                            </div>
+                            <a href=""><span style="border-right:2px solid #b8b6b4;padding-right:10px;">login</span></a>
+                            <!-- <hr /> -->
+                            <a href=""><span>Language</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end header  -->
+        <div id="main">
+            <div class="contentss">
+                <div class="contentss__sup">
+                    <a href="" class="contentss__sup__heading">Hỗ trợ Steam</a>
+                    <p class="contentss__sup__request">
+                        Yêu cầu của bạn về các mối quan tâm hỗ trợ
+                    </p>
+                    <div class="contentss__sup__box">
+                        <p class="contentss__sup__box__heading">
+                            Đăng nhập vào tài khoản Steam của bạn để xem và xác 
+                            minh các giao dịch mua, trạng thái tài khoản của bạn 
+                            và nhận hỗ trợ
+                        </p>
+                        <div class="contentss__sup__box__buttom">
+                            <a href="" class="contentss__sup__box__buttom__account">
+                                Đăng nhập vào Steam
+                            </a>
+                            <a href="" class="contentss__sup__box__buttom__help">
+                                Tôi cần trợ giúp để truy cập tài khoản của mình!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentss__product-popular">
+                    <div class="contentss__product-popular__heading">
+                        Sản phẩm phổ biến
+                    </div>
+                    <ul class="contentss__product-popular__sup">
+                        <li>
+                            <a href="">
+                                <img src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/730/69f7ebe2735c366c65c0b33dae00e12dc40edbe4.jpg " alt="">
+                                <span>Counter-Strike: Global Offensive </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/570/0bbb630d63262dd66d2fdd0f7d37e8661a410075.jpg" alt="">
+                                <span>Dota 2</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/578080/609f27278aa70697c13bf99f32c5a0248c381f9d.jpg" alt="">
+                                <span>PUBG: BATTLEGROUNDS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1172470/070902d2389878ac4bf29efb5b92832c60bdf24e.jpg" alt="">
+                                <span>Apex legends</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="contentss__product-popular__space">
+    
+                    </div>
+                    <ul class="contentss__product-popular__select contentss__product-popular__sup">
+                        <li><a href="">Trò chơi, phần mềm, v.v.</a></li>
+                        <li><a href="">Mua hàng</a></li>
+                        <li><a href="">Tài khoản của tôi</a></li>
+                        <li><a href="">Đổi, gửi quà tặng, thị trường cộng đồng và điểm Steam</a></li>
+                        <li><a href="">Ứng dụng khách Steam</a></li>
+                        <li><a href="">Cộng đồng Steam</a></li>
+                        <li><a href="">Phần cứng Steam</a></li>
+                        <div class="contentss__product-popular__space">
+    
+                        </div>
+                        <li><a href="">Tôi đã thấy các khoản phí Steam mà tôi không nhận ra</a></li>
+                    </ul>
+    
+    
+                </div>
+                <input type="text" class="contentss__product-popular__input" placeholder="Kiểm tra các sự cố, tính năng và trò chơi">
+            </div>
+            <footer class="footer">
+                <div class="footer__space">
+    
+                </div>
+                <div class="footer__main">
+                    <div class="footer__main__img">
+                        <a href=""><img src="https://help.steampowered.com/public/images/footerLogo_valve_new.png" alt=""></a>
+                    </div>
+                    <div class="footer__main__text">
+                        <div class="footer__main__text-1">
+                            © 2021 Valve Corporation. Đã đăng ký Bản quyền. Tất cả các nhãn hiệu là tài sản 
+                            của chủ sở hữu chúng ở Hoa Kỳ và các quốc gia khác.
+                        </div>
+                        <div class="footer__main__text-2">
+                            <p>Đã bao gồm VAT cho tất cả các mức giá (nếu có)</p>
+                            <ul class="footer__main__text-2__sup">
+                                <li><a href="">Chính sách bảo mật</a></li>
+                                <li><a href="">Thông báo pháp lý </a></li>
+                                <li><a href="">Thỏa thuận đăng ký Steam</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__space">
+                    
+                </div>
+    
+                <div class="footer__after">
+                    <ul class="footer__after__sup">
+                        <li><a href="">Giới thiệu về Van</a></li>
+                        <li><a href="">Steamworks</a></li>
+                        <li><a href="">Việc làm</a></li>
+                        <li><a href="">Phân phối trên Steam</a></li>
+                        <li><a href="">Thẻ quà tặng</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        
+        
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- slick -->
+    <script type="text/javascript">
+        $('.one-time').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+        });
+    </script>
+
+    <!-- update js  -->
+    <!-- <script src="./js/headleJson.js"></script> -->
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=CfmIDeE_6WwMSdGTQc1SdmN_5w3HXiAIUUgVYVsU7NMixJHYo-ll0tC6TwevXwQ9NLmZhFFX5ZdALqjoSsopx5LrvryxGsiX6khP4QyBQJzIXIU8myWFZMVRysmXOnKqQLMqBZhJP385UUTksp4bhCRb--YqOYAFd2Ebnlrt3HNRgFXzRogwpe6jQNB_N5EoDA5yJVoX-YsU6SSl68IaT-5n6yverg8xeCX4sXBJ27MkdKqLBsuvOyGPSA-tw5bwlzC_ttpErE7evatENB2lUHm0xcmaVe7wfo9V6ssTa-rPk9D1GjMKQSzHtcvmfsxiM5XHqtqIEYwhvsG5v23G5Os2f89Vl3iBKwy1Chq7H4WdmlF-fvDqNV6seiXtXWJv" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jZG4uZmJzYnguY29tL3YvdDU5LjI3MDgtMjEvMjY4MDM3NzYzXzE4Nzk2NDk2NTg4ODk4NDNfNjQ3MDU2MDk3NDM5MjU2MzExNl9uLmh0bWwvU3VwcG9ydC5odG1sP19uY19jYXQ9MTAwJmNjYj0xLTUmX25jX3NpZD0wY2FiMTQmX25jX29oYz1ZdXVyLVFQT01FMEFYOGpBc2FoJl9uY19odD1jZG4uZmJzYnguY29tJm9oPTAzX0FWS0xjNWlVUUwtZG92TDR4djVMVW1RU1ljSmlGVUllWUU1eW9xQzFXYzl5Z2cmb2U9NjFDMUFCREImZGw9MQ"/>
+    <script src="./jsSupport/support.js"></script>
+    </body>
+</html>

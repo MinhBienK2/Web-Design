@@ -1,0 +1,61 @@
+/* thanh nav  */
+/* .nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.nav li {
+    width: 11.1111111%;
+    padding:8px 0;
+    text-transform: uppercase;
+    background-color: #fbfef5 ;
+    border:1px solid black;
+    color:black;
+    text-align: center;
+
+}
+
+.nav li:hover {
+    background-color: #00a551;
+    color:#fff;
+} */
+
+/* --------------------------------- */
+
+/* nav co tim kiem */
+
+.nav{
+    /* height:30px; */
+    display: flex;
+    background-color:#045199 ;
+    color:#fff;
+    justify-content: space-between;
+    font-size: 14px;
+    width:1226px;
+    margin: 0 auto;
+    text-transform:uppercase;
+    text-align:center;
+}
+.nav li:hover{
+    color:blue;
+    background-color:#fff;
+}
+.nav a{
+    color:#fff;
+    background-color:#045199;
+    text-decoration: none;
+}
+
+
+.nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin:0;
+}
+.nav ul li{
+    padding:8px 30px;
+
+}
+
+/* ------------------------------------------------ */

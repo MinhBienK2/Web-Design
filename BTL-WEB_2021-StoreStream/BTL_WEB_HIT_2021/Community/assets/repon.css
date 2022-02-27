@@ -1,0 +1,76 @@
+/* mobile and tablet */
+@media (max-width: 991px) {
+  .repon-login {
+    display: block;
+  }
+
+  .box-login {
+    min-height: 0;
+    margin-bottom: 10px;
+  }
+
+  .user-review .card-image {
+    height: 200px;
+  }
+
+  .search-divider {
+    display: none;
+  }
+
+  .btn-on-top span {
+    display: none;
+  }
+
+  .repon__btn-more {
+    display: block;
+  }
+}
+
+
+/* mobile */
+@media (max-width: 575px) {
+  .image-full {
+    height: 200px;
+  }
+
+  .card-title img {
+    width: 54px;
+    height: 40px;
+  }
+}
+
+/* table */
+@media (min-width: 576px) and (max-width: 991px) {
+  .image-full {
+    height: 420px;
+  }
+
+  .pr-15 {
+    padding-right: 15px;
+  }
+  
+  .pl-15 {
+    padding-left: 15px;
+  }
+
+  .box-login {
+    display: flex;
+  }
+}
+
+
+@media (min-width: 992px) {
+  
+}
+
+@media (min-width:769px) and (max-width:1022px ){
+  .grid.wide.header-grid{
+    width:100%;
+  }
+}
+
+@media (min-width:740px) and (max-width:768px ){
+  .header__icon-bars {
+    left: -90px;
+  }
+}

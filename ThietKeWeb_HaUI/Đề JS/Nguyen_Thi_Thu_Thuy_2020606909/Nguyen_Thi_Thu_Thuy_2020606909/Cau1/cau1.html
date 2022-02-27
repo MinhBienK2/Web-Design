@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Câu 1</title>
+  <link rel="stylesheet" href="asses/css/cau1.css">
+</head>
+<body>
+  <div class="form-regis">
+    <div class="title" style="text-align: center;">ĐĂNG KÝ THÀNH VIÊN</div>
+    <div class="flex-row">
+      <div class="label">Họ và tên</div>
+      <div class="input"><input onchange="handleChangeName(event)" placeholder="Nhập họ và tên"/></div>
+    </div>
+    <div class="flex-row">
+      <div class="label">Mật khẩu</div>
+      <div class="input"><input type="password" onchange="handleChangePass(event)" /></div>
+    </div>
+    <div class="flex-row">
+      <div class="label">Khẳng định mật khẩu</div>
+      <div class="input"><input type="password" onchange="handleChangeConfirmPass(event)" /></div>
+    </div>
+    <div class="flex-row">
+      <div class="label">Ngày tháng năm sinh</div>
+      <div class="input"><input onchange="handleChangeDate(event)" type="date" name="date" style="width: 85%;" /></div>
+    </div>
+    <div class="flex-row">
+      <div class="label">Số điện thoại</div>
+      <div class="input"><input onchange="handleChangePhone(event)" placeholder="0923412345"/></div>
+    </div>
+    <div class="flex-row">
+      <div class="label">Đường dẫn ảnh</div>
+      <div class="input">
+        <input type="file" name="images" >
+      </div>
+    </div>
+    <div class="flex-row">
+      <button onclick="return handleSubmit()">Đăng ký</button>
+      <input id="reset" type="reset" value="Hủy bỏ">
+    </div>
+  </div>
+  <script src="asses/js/cau1.js"> </script>
+</body>
+</html>

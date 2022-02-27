@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <label for="">Nhập sâu văn bản</label>
+        <br>
+        <textarea name="ftext" value="" id="text" cols="30" rows="10"></textarea>
+        <br>
+        <label for="">Nhập từ cần tìm</label>
+        <input type="text" value="" id="find" value="">
+        <br>
+        <button id="result">kiểm tra</button>
+
+
+    <script>
+        const $ = document.querySelector.bind(document);
+        const text = $('#text')
+        const find = $('#find')
+        const result = $('#result')
+
+        result.onclick = (e) =>{
+            const arr = text.value.split(' ').indexOf(find.value)
+            if(text.value != '' && find.value !=''&& arr!= -1)
+                alert(`vị trí của từ cần tìm "${find.value}" là ${arr}`)
+            else alert("Không có phần tử nào hoặc chưa nhập thông tin ")
+            
+        }
+        
+    </script>
+</body>
+</html>

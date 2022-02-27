@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <label for="">Ngày tháng năm sinh:</label>
+        <select name="ngay" id="ngay">123</select>
+        <label for="">Tháng:</label>
+        <select name="thang" id="thang">
+        </select>
+        <label for="">Năm:</label>
+        <select name="nam" id="nam">
+        </select> 
+    </div>
+
+    <script>
+        const ngay = document.querySelector('#ngay');
+        const thang = document.querySelector('#thang');
+        const nam = document.querySelector('#nam');
+
+        let sumDay = ``
+        date()
+        ngay.innerHTML = sumDay
+        function date() {
+            for(let i=1;i<=31;i++){
+                sumDay+= `<option value="${i}">${i}</option>`
+            }
+        }
+ 
+        let sumMonth = ``
+        month()
+        thang.innerHTML = sumMonth
+        function month() {
+            for(let i=1;i<=12;i++){
+                sumMonth+= `<option value="${i}">${i}</option>`
+            }
+        }
+
+        let sumYear = ``
+        year()
+        nam.innerHTML = sumYear
+        function year() {
+            for(let i=1900;i<=2021;i++){
+                sumYear+= `<option value="${i}">${i}</option>`
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="input">Nhập số x chia hết cho 5 và 3: </label> <br>
+    <input type="text" value="" id="input"><br>
+    <label for="output">Trả về kết quả  </label> <br>
+    <textarea name="" id="output" cols="30" rows="10"></textarea>
+    <!-- <input type="text" value="" id = "output"> <br> -->
+    <button id = "result">kết quả</button>
+</body>
+
+<script>
+    const input = document.getElementById("input");
+    const output = document.getElementById("output");
+    const result = document.querySelector('#result')
+    console.log(input,output);
+    result.onclick = function() {
+        kiemTra(input.value)
+    }
+    function kiemTra(input){
+        let arr = new Array();
+        let count = 0
+        for(let i=1;i<=input;i++)
+        {
+            if(i%5==0 && i%3==0) {
+                arr[count] = i
+                count++;
+            }    
+        }
+        output.value = arr.join('-')
+    }
+</script>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main{
+            text-align: center;
+        }
+        form{
+            display: inline-block;
+            text-align: left;
+            padding: 30px 50px;
+            background-color: rgb(168, 168, 168);
+        }
+        form i{
+            color:red;
+            margin-left:155px;
+        }
+        .active{
+            border:1px solid red;
+        }
+        input{
+            margin:5px 0;
+        }
+        label{
+            display: inline-block;
+            min-width:150px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form action="" onsubmit="return validate();">
+        <h1>Đăng kí thành viên</h1>
+        <label for="">Họ và tên</label>
+        <input type="text" value="" id = "fname"> <br><i id = "errorName"></i>
+        <br>
+        <label for="">Mật khẩu</label>
+        <input type="password" value="" id = "pass"> <br><i id = "errorPass"></i>
+        <br> 
+            <label for="">Khẳng đinh mật khẩu</label>
+        <input type="password" value="" id = "comfirm"> <br><i id = "errorComfirm"></i>
+        <br> 
+            <label for="">Ngày tháng năm sinh</label>
+        <input type="date" value="" id = "date"> <br><i id = "errorDate"></i>
+        <br> 
+            <label for="">Số điện thoại</label>
+        <input type="tel" value="" id = "tel"><br> <i id = "errorTel"></i>
+        <br> 
+        <label for="">Đường dẫn</label>
+        <input type="file" value="" id = "file"> <br> <i id = "errorFile"></i>
+        <br>
+        <button id="dangKi">Đăng kí</button>
+        <button id="lose">Hủy bỏ</button>
+    </form>
+    </div>
+    
+   
+
+
+    <script>
+        const $ = document.querySelector.bind(document)
+        const fname = $('#fname')
+        const pass = $('#pass')
+        const comfirm = $('#comfirm')
+        const date = $('#date')
+        const tel = $('#tel')
+        const file = $('#file')
+        const dangKi = $('#dangKi')
+        const lose = $('#lose')
+        const errorName = $('#errorName')
+        const errorPass = $('#errorPass')
+        const errorComfirm = $('#errorComfirm')
+        const errorTel = $('#errorTel')
+        const errorFile = $('#errorFile')
+        checkName()
+        checkPass()
+        checkComfirm()
+        checkTel()
+        checkFile()
+        checkDate()
+        cancel()
+        function cancel() {
+            lose.onclick = function () {
+                fname.value =''
+                pass.value =''
+                confirm.value = ''
+                date.value =''
+                tel.value =''
+                file.value =null
+                errorName.innerHTML = ''
+                errorPass.innerHTML = ''
+                errorComfirm.innerHTML = ''
+                errorDate.innerHTML = ''
+                errorTel.innerHTML = ''
+                errorFile.innerHTML = ''
+            }
+        }
+        
+        
+        function checkName () {
+            fname.onchange = function () {
+            if(/^[^\d+]*[\d+]{0}[^\d+]*$/.test(fname.value))
+                errorName.innerHTML = ''
+            else if(fname.value =='' || fname.value ==null)
+                errorName.innerHTML = 'Bạn chưa nhập dữ liệu'
+            else errorName.innerHTML = 'kiểm tra lại Họ và tên'
+            }
+        }
+
+        function checkPass () {
+            pass.onchange = function () {
+            if(/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/.test(pass.value))
+                errorPass.innerHTML = ''
+            else if(pass.value =='' || pass.value ==null)
+                errorPass.innerHTML = 'Bạn chưa nhập dữ liệu'
+            else errorPass.innerHTML = 'mật khẩu chưa hợp lệ'
+            }
+        }
+
+        function checkComfirm () {
+            comfirm.onchange = function () {
+            if(pass.value == comfirm.value)
+                errorComfirm.innerHTML = ''
+            else if(comfirm.value =='' || comfirm.value ==null)
+                errorComfirm.innerHTML = 'Kiểm tra lại '
+            else errorComfirm.innerHTML = 'Xác nhận mật khẩu chưa hợp lệ'
+            }
+        }
+        function checkDate () {
+            date.onchange = function () {
+                if(date.value =='' || date.value ==null)
+                    errorDate.innerHTML = 'Bạn cần nhập ngày tháng'   
+                else errorDate.innerHTML = ''
+            }
+            
+        }
+
+        function checkTel () {
+            tel.onchange = function () {
+            if(/^[0-9][(-]?[0-9]{3}[)-]?[(]?[0-9]{3}[)-]?[(]?[0-9]{3,4}[)]?$/.test(tel.value))
+                errorTel.innerHTML = ''
+            else if(tel.value =='' || tel.value ==null)
+                errorTel.innerHTML = 'Bạn chưa nhập dữ liệu'
+            else errorTel.innerHTML = 'Số điện thoại chưa hợp lệ '
+            }
+        }   
+        function checkFile () {
+            file.onchange = function () {
+                if(file.value =='' || file.value ==null)
+                    errorFile.innerHTML = 'Bạn cần chọn file'   
+                else errorFile.innerHTML = ''
+            }
+        }   
+
+
+
+        function validate() {
+            let flag = true;
+            if(fname.value =='' || fname.value ==null)
+                errorName.innerHTML = 'Bạn chưa nhập dữ liệu'
+            else if(/^[^\d+]*[\d+]{0}[^\d+]*$/.test(fname.value))
+                errorName.innerHTML = ''
+            else errorName.innerHTML = 'kiểm tra lại Họ và tên (bằng chữ)'
+
+            if(/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/.test(pass.value))
+                errorPass.innerHTML = ''
+            else if(pass.value =='' || pass.value ==null)
+                errorPass.innerHTML = 'Bạn chưa nhập dữ liệu'
+            else errorPass.innerHTML = 'mật khẩu chưa hợp lệ'
+
+      
+            if(comfirm.value =='' || comfirm.value ==null)
+                errorComfirm.innerHTML = 'Bạn chưa nhập dữ liệu '   
+            else if(pass.value == comfirm.value)
+                errorComfirm.innerHTML = ''
+            else errorComfirm.innerHTML = 'Xác nhận mật khẩu chưa hợp lệ'
+
+            if(date.value =='' || date.value ==null)
+                errorDate.innerHTML = 'Bạn cần nhập ngày tháng'   
+            else errorDate.innerHTML = ''
+      
+            if(/^[0-9][(-]?[0-9]{3}[)-]?[(]?[0-9]{3}[)-]?[(]?[0-9]{3,4}[)]?$/.test(tel.value))
+                errorTel.innerHTML = ''
+            else if(tel.value =='' || tel.value ==null)
+                errorTel.innerHTML = 'Bạn cần nhập số '
+            else errorTel.innerHTML = 'Số điện thoại chưa hợp lệ'
+            
+            if(file.value =='' || file.value ==null)
+                errorFile.innerHTML = 'Bạn cần chọn file'   
+            else errorFile.innerHTML = ''
+
+            if(   errorName.innerHTML == '' && errorPass.innerHTML == ''&&errorComfirm.innerHTML == ''&&errorDate.innerHTML == ''&&errorTel.innerHTML == '')
+               {
+                   alert('Xác nhận đăng kí thành công')
+                    return true 
+               } 
+            else {
+                cancel()
+                return true
+            }
+
+            return false
+        }
+
+    </script>
+</body>
+</html>

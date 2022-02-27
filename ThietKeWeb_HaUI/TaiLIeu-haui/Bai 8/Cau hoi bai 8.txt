@@ -1,0 +1,6 @@
+﻿_Xem xét đoạn lệnh sau: var a = new Array (12, false, "text");x = 10; if  (a [1]) x = 20; else x = 30; Giá trị của x là bao nhiêu khi kết thúc quá trình thực hiện
+A. 30
+B. 10
+C. 20
+D. Mã có lỗi
+ANSWER:A

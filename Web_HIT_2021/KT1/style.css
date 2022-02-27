@@ -1,0 +1,140 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.header{
+    width:100%;
+    height:150px;
+    background: url(https://elead.com.vn/wp-content/uploads/2020/04/13624171783_9f287bafdb_o.jpg) center /cover no-repeat;
+}
+
+.nav{
+    background-color: #134C92;
+}
+
+.nav>ul {
+    display:flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.nav ul li {
+    font-size:20px;
+    font-weight: 600;
+    color:#fff;
+}
+
+.bang-li {
+    position:relative;
+}
+.bang-li:hover {
+
+}
+
+.bang{
+    width:150px;
+    padding:10px;
+    list-style: none;
+    background-color:  black;
+    position: absolute;
+    top:180px;
+    left:370px;
+    display:none;
+}
+
+.bang li {
+    color: blue;
+}
+.main{
+    display:flex;
+    margin-top:15px;
+    justify-content:space-around
+}
+
+.main-one{
+    width:57%;
+}
+.main-one h3{
+    width:100%;
+    
+}
+
+.container-one{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    text-align: center;
+}
+
+.box-one{
+    width:30%;
+    padding:10px 0 ;
+}
+
+.box-one img{
+    width:100%;  
+    height:220px;
+}
+.box-one h4,
+.box-one h5{
+    padding:6px 0 ;
+    font-size:20px;
+}
+
+.box-one h5{
+    padding:6px 0 ;
+    font-size:18px;
+}
+
+
+.gach{
+    text-decoration: line-through;
+}
+
+.main-two{
+    width:18%;
+    text-align:center;
+}
+.main-two img{
+    width:100%;
+    height:400px;
+}
+
+input {
+    width:100%;
+    padding:8px 10px;
+    margin:5px 0 ;
+    margin:10px 0;
+}
+
+.chon{
+    border:1px solid #333;
+    padding:8px 0;
+    display: flex;
+    justify-content:space-between;
+    margin:5px 0 ;
+}
+
+button {
+    padding:8px 10px;
+    background-color:linear-gradient(rgb(192, 188, 188) , rgb(77, 75, 75))
+}
+
+.main-three{
+    width:18%;
+    text-align:center;
+}
+.main-three img{
+    width:100px;
+    
+}
+
+.img-4 {
+    display: flex;
+    margin:10px 0;
+}
+
+

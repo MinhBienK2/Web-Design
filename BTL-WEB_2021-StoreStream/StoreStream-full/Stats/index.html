@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- CSS bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- slick -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <link rel="stylesheet" href="./css/grid.css" /> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="./css/styleHeader.css" />
+        <link rel="stylesheet" href="./css/styleSearch.css">
+        <link rel="stylesheet" href="./css/styleMain.css">
+        <link rel="stylesheet" href="./css/reponsive.css">
+        <link rel="stylesheet" href="./css/stats.css">
+        <title>Store Stream</title>
+    </head>
+    <body>
+        <!-- start header -->
+        <div class="header">
+            <div class="grid wide header-grid">
+                <div class="row header-row">
+                    <!-- <div class="col li-12 m-12 c-12 header-col"> -->
+                    <div class="col col-lg-12 col-md-12 col-sm-12 header-col ">
+                        <!-- start nav mobile -->
+                        <!-- bars mobile -->
+                        <div class="header__icon-bars">
+                            <label for="check">
+                                <i class="fas fa-bars"> </i>
+                            </label>
+                            <input
+                                type="checkbox"
+                                id="check"
+                                name="checkbox"
+                                hidden
+                            />
+                            <label for="check" class="background-black"></label>
+                            <ul id="header__bars-nav">
+                                <li class = "header__bars_nav-border"><a href="">Login</a></li>
+                                <!-- Accordion Store -->
+                                <li class = "accordion-header header__bars_nav-border " id="headingTwo">
+                                    <a class="accordion-button collapsed nav-accordion" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" href="">Store</a>
+                                </li>
+                                  <ul class="accordion-collapse collapse nav-accordion" id="collapseTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <li class="accordion-body"><a href="">Home</a></li>
+                                    <li class="accordion-body"><a href="">Discovery Queue</a></li>
+                                    <li class="accordion-body"><a href="">Wishlist</a></li>
+                                    <li class="accordion-body"><a href="">points Shop</a></li>
+                                    <li class="accordion-body"><a href="">News</a></li>
+                                    <li class="accordion-body"><a href="">Stats</a></li>
+                                  </ul>
+                                <!-- Accordion Communiry -->
+                                <li class = "accordion-header header__bars_nav-border" id="headingThree">
+                                    <a class="accordion-button collapsed nav-accordion" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" href="">Communiry</a>
+                                </li>
+                                  <ul class="accordion-collapse collapse nav-accordion" id="collapseThree" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <li class="accordion-body"><a href="">Home</a></li>
+                                    <li class="accordion-body"><a href="">Discussions</a></li>
+                                    <li class="accordion-body"><a href="">Workshop</a></li>
+                                    <li class="accordion-body"><a href="">Market</a></li>
+                                    <li class="accordion-body"><a href="">Broadcasts</a></li>
+                                    <!-- <li class="accordion-body"><a href="">Stats</a></li> -->
+                                  </ul>
+                                <li class = "header__bars_nav-border"><a href="">Support</a></li>
+                                <li class="header__bars_nav-border" style="border: none; margin-top:0px;"><a href=""><span style="color: #8a8a8a;border: none;font-size: 0.75em;">Change language</span> </a></li>
+                                <li class="header__bars_nav-border" style="border: none; margin-top:0px;"><a href=""><span style="color: #8a8a8a;border: none;font-size: 0.75em;"> view desktop website</span></a></li>
+                                <div class="header__bars-nav-img">
+                                    <img src="	https://store.cloudflare.steamstatic.com/public/shared/images/responsive/logo_valve_footer.png" alt="">
+                                    <p>© Valve Corporation. Tous droits réservés. Toutes les marques commerciales sont la propriété de leurs titulaires aux États-Unis et dans d'autres pays. Politique de protection de la vie privée &nbsp| &nbsp Accord de souscription Steam Remboursements</p>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <!-- end nav mobile -->
+                        <img
+                            src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
+                            alt=""
+                        />
+                        <ul class="header__ul-one">
+                            <!-- Start list nav -->
+                            <li class="list-nar">
+                                <a href="">Store</a>
+                                <ul class="header__ul-two">
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">Discovery Queue</a></li>
+                                    <li><a href="">Wishlist</a></li>
+                                    <li><a href="">points Shop</a></li>
+                                    <li><a href="">News</a></li>
+                                    <li><a href="https://github.com/NguyenVanTho02/BTL_WEB">Stats</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-nar">
+                                <a href="">Communiry</a>
+                                <ul class="header__ul-two">
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">Discovery</a></li>
+                                    <li><a href="">Workshop</a></li>
+                                    <li><a href="">Market Shop</a></li>
+                                    <li><a href="">Broadcasts</a></li>
+                                </ul>
+                            </li>
+                            <!-- end list nav -->
+                            <li><a href="">About</a></li>
+                            <li><a href="">Support</a></li>
+                        </ul>
+                        <div class="header__login">
+                            <div class="header__login-install">
+                                <div class="install-icon">
+                                    <i style="
+                                    font-size: 17px;margin-right:5px;" class="fab fa-instalod"></i>
+                                </div>
+                                <p >Install Steam</p>
+                            </div>
+                            <a href=""><span style="border-right:2px solid #b8b6b4;padding-right:10px;">login</span></a>
+                            <!-- <hr /> -->
+                            <a href=""><span>Language</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end header  -->
+        
+        <!-- start search -->
+        <div class="search">
+            <div class="grid wide search-grid">
+                <div class="row search-row margin-search-row">
+                    <div class="col col-lg-12 col-md-12 col-sm-12  search-col">
+                        <ul class="search__ul-one">
+                            <!-- nav list -->
+                            <li class="search-list__nav ">
+                                <a href="">your Store</a>
+                                <ul class="search__ul-two search-opacity">
+                                    <li><a href="">Home</a></li>
+                                    <li>
+                                        <a href="">Community recommentdation</a>
+                                    </li>
+                                    <li><a href="">Wishlist</a></li>
+                                    <li><a href="">points Shop</a></li>
+                                </ul>
+                            </li>
+                            <li class="search-list__nav">
+                                <a href="">new & noteworthy</a>
+                                <ul class="search__ul-two nav_list-two search-opacity">
+                                    <li><a href="">Top sellers</a></li>
+                                    <li>
+                                        <a href="">new & trending </a>
+                                    </li>
+                                    <li><a href="">Current specials</a></li>
+                                    <li><a href="">recontly updated</a></li>
+                                    <li><a href="">popular Upcoming</a></li>
+                                </ul>
+                            </li>
+                            <li class="search-list__nav">
+                                <a href="">Categories</a>
+                                <ul class="search__ul-two nav_list-three1">
+                                    <li class="list-three__font"> <p> SPECIAL SECTIONS</p></li>
+                                    <li><a href="">Free to Play</a></li>
+                                    <li>
+                                        <a href="">Demos </a>
+                                    </li>
+                                    <li><a href="">Early Access ></a></li>
+                                    <li><a href="">Controller Friendly</a></li>
+                                    <li><a href="">Remote Play</a></li>
+                                    <li><a href="">Software</a></li>
+                                    <li>
+                                        <a href="">Soundtracks </a>
+                                    </li>
+                                    <li><a href="">Virtual Reality ></a></li>
+                                    <li><a href="">VR Hardware</a></li>
+                                    <li><a href="">Steam Deck</a></li>
+                                    <li><a href="">macOS ></a></li>
+                                    <li><a href="">SteamOS + Linux</a></li>
+                                    <li><a href="">For PC Cafés</a></li>
+                                </ul>
+                                <ul class="search__ul-two nav_list-three2">
+                                    <li class="list-three__font"> <p>GENRES</p></li>
+                                    <li><a href="">Action</a></li>
+                                    <li>
+                                        <a href="">Action Rogue-Like </a>
+                                    </li>
+                                    <li><a href="">Arcade & Rhythm ></a></li>
+                                    <li><a href="">Beat 'Em Up</a></li>
+                                    <li><a href="">Fighting & Martial Arts</a></li>
+                                    <li><a href="">First-Person Shooter ></a></li>
+                                    <li><a href="">Platformer & Runner</a></li>
+                                    <li><a href="">Third-Person Shooter</a></li>
+                                    <li class="list-three__font-w"> <p>Adventure & Casual</p></li>
+                                    <li><a href="">Adventure</a></li>
+                                    <li><a href="">Adventure RPG</a></li>
+                                    <li><a href="">Casual</a></li>
+                                    <li><a href="">Metroidvania</a></li>
+                                    <li><a href="">Puzzle</a></li>
+                                    <li><a href="">Story-Rich</a></li>
+                                    <li><a href="">Visual Novel</a></li>
+                                </ul>
+                                <ul class="search__ul-two nav_list-three3">
+                                    <li class="list-three__font-w"> <p>Role-Playing</p></li>
+                                    <li><a href="">Action RPG</a></li>
+                                    <li>
+                                        <a href="">Adventure RPG </a>
+                                    </li>
+                                    <li><a href="">JRPG></a></li>
+                                    <li><a href="">Party-Based</a></li>
+                                    <li><a href="">Rogue-Like</a></li>
+                                    <li><a href="">Strategy RPG</a></li>
+                                    <li>
+                                        <a href="">Turn-Based </a>
+                                    </li>
+                                    <li class="list-three__font-w"> <p>Simulation</p> </li>
+                                    <li><a href="">Building & Automation</a></li>
+                                    <li><a href="">Business & Tycoon</a></li>
+                                    <li><a href="">Dating</a></li>
+                                    <li><a href="">Farming & Crafting ></a></li>
+                                    <li><a href="">Life & Immersive</a></li>
+                                    <li><a href="">Sandbox & Physics</a></li>
+                                    <li><a href="">Space & Flight</a></li>
+                                </ul>
+                                <ul class="search__ul-two nav_list-three4">
+                                    <li class="list-three__font-w"> <p>Role-Playing</p> </li>
+                                    <li><a href="">Action RPG</a></li>
+                                    <li>
+                                        <a href="">Adventure RPG </a>
+                                    </li>
+                                    <li><a href="">JRPG></a></li>
+                                    <li><a href="">Party-Based</a></li>
+                                    <li><a href="">Rogue-Like</a></li>
+                                    <li><a href="">Strategy RPG</a></li>
+                                    <li>
+                                        <a href="">Turn-Based </a>
+                                    </li>
+                                    <li class="list-three__font-w"> <p>Simulation</p> </li>
+                                    <li><a href="">Building & Automation</a></li>
+                                    <li><a href="">Business & Tycoon</a></li>
+                                    <li><a href="">Dating</a></li>
+                                    <li><a href="">Farming & Crafting ></a></li>
+                                    <li><a href="">Life & Immersive</a></li>
+                                    <li><a href="">Sandbox & Physics</a></li>
+                                    <li><a href="">Space & Flight</a></li>
+                                </ul>
+                                <ul class="search__ul-two nav_list-three5">
+                                    <li class="list-three__font"> <p>THEMES</p> </li>
+                                    <li><a href="">Anime</a></li>
+                                    <li>
+                                        <a href="">Horror </a>
+                                    </li>
+                                    <li><a href="">Mystery & Detective ></a></li>
+                                    <li><a href="">Open World</a></li>
+                                    <li><a href="">Sci-Fi & Cyberpunk</a></li>
+                                    <li><a href="">Space</a></li>
+                                    <li>
+                                        <a href="">Survival </a>
+                                    </li>
+                                    <li class="list-three__font"> <p>PLAYER SUPPORT</p> </li>
+                                    <li><a href="">Cooperative ></a></li>
+                                    <li><a href="">LAN</a></li>
+                                    <li><a href="">Local & Party</a></li>
+                                    <li><a href="">MMO</a></li>
+                                    <li>
+                                        <a href="">Multiplayer</a>
+                                    </li>
+                                    <li><a href="">Online Competitive ></a></li>
+                                    <li><a href="">Singleplayer</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- end nav list -->
+                            <!-- <li><a href="">Categories</a></li> -->
+                            <li><a href="">Points Shop</a></li>
+                            <li><a href="">News</a></li>
+                            <li><a href="">labs</a></li>
+                        </ul>
+                        <div class="search__input">
+                            <input
+                                type="text"
+                                placeholder="Search"
+                                id="search-in"
+                                style="padding-left:10px;"
+                            />
+                            <div class="search__icon-s">
+                               <img src="https://store.cloudflare.steamstatic.com/public/images/v6/search_icon_btn.png" alt=""> 
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end search -->
+
+        <!-- main -->
+        <div class="main__start">
+            <div class="grid wide ">
+                <div class="row">
+                    <div class="col col-lg-12 col-md-12 col-sm-12  ">
+                        <div class="breadcrumbs">
+                            <a href="https://store.steampowered.com/stats/?snr=1_stats_4_">Steam Stats</a>
+                        </div>
+                        <h2 class="pageheader">STEAM & GAME STATS
+                            <span class="statsTopSmall secondary_text">UPDATED: 18 DECEMBER, 2021 @ 11:50PM </span>
+                        </h2>
+                        <p class="body_text"> Our on-going goal with Steam is to improve the service we offer customers. We believe that by sharing this
+                            data, we'll be able to spot problems earlier, improve the Steam service more efficiently, and ultimately build
+                            better products and experiences. <a href="https://steamcommunity.com/discussions/?snr=1_stats_4_">Let us know</a> what you think. 
+                        </p>
+                        <div class="block_header">
+                            <div>Concurrent Steam Users <span id="community_activity_note" class="header_inline">(most recent 48 hours)</span>
+                            </div>
+                        </div>
+                        <!-- chart -->
+                        <div class="block_content block_content_inner dark">
+                            <div class="chart_center">
+                                <div id="chartlegendUsers" class="chartLegend">
+                                    <img class ="chart_center-img" src="./img/chart.jpg" alt="">
+                                </div>
+                                <div id="chartdivUsers" class="chartdiv" style="padding: 0px; position: relative;">
+                                    <canvas class="flot-base" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 670px; height: 300px;" width="837" height="375"></canvas><div class="flot-text" style="position: absolute; inset: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; inset: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 300px; left: 6px; text-class: center;">07:00 PM</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 300px; left: 291px; text-class: center;">07:00 PM</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 300px; left: 29px; text-class: center;">09:00 PM</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 300px; left: 315px; text-class: center;">09:00 PM</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 300px; left: 53px; text-class: center;">11:00 PM</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 300px; left: 338px; text-class: center;">11:00 PM</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 300px; left: 77px; text-class: center;"><div class="dateAxis">Dec 17, 21</div></div><div class="flot-tick-label tickLabel" style="position: absolute; top: 300px; left: 101px; text-class: center;">03:00 AM</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 300px; left: 386px; text-class: center;">03:00 AM</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 300px; left: 125px; text-class: center;">05:00 AM</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 300px; left: 410px; text-class: center;">05:00 AM</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 300px; left: 148px; text-class: center;">07:00 AM</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 300px; left: 433px; text-class: center;">07:00 AM</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 300px; left: 172px; text-class: center;">09:00 AM</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 300px; left: 457px; text-class: center;">09:00 AM</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 300px; left: 196px; text-class: center;">11:00 AM</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 300px; left: 481px; text-class: center;">11:00 AM</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 300px; left: 220px; text-class: center;">01:00 PM</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 300px; left: 505px; text-class: center;">01:00 PM</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 300px; left: 243px; text-class: center;">03:00 PM</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 300px; left: 528px; text-class: center;">03:00 PM</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 300px; left: 267px; text-class: center;">05:00 PM</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 300px; left: 552px; text-class: center;">05:00 PM</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 300px; left: 362px; text-class: center;"><div class="dateAxis">Dec 18, 21</div></div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; inset: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 274px; left: 0px; text-class: right;">14.0M</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 229px; left: 0px; text-class: right;">16.0M</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 183px; left: 0px; text-class: right;">18.0M</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 138px; left: 0px; text-class: right;">20.0M</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 92px; left: 0px; text-class: right;">22.0M</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 47px; left: 0px; text-class: right;">24.0M</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 1px; left: 0px; text-class: right;">26.0M</div></div></div><canvas class="flot-overlay" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 670px; height: 300px;" width="837" height="375"></canvas><div class="legend"><div style="position: absolute; width: 158px; height: 18px; bottom: 19px; left: 50px; opacity: 0.85;"> </div><table style="position:absolute;bottom:19px;left:50px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid black;padding:1px"><div style="width:4px;height:0;border:5px solid #67c1f5;overflow:hidden"></div></div></td><td class="legendLabel">Steam users logged in</td></tr></tbody></table></div>
+                                </div>
+                            </div>
+                            <div class="statsTop">
+                                <table class="users_count_table" cellspacing="0" cellpadding="5">
+                                    <tbody><tr>
+                                        <td class="left">&nbsp;</td>
+                                        <td class="right">current</td>
+                                        <td class="right">peak</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="users_label" class="left">Concurrent Steam Users:</td>
+                                        <td class="users_count" class="right"><span class="statsTopHi">23,090,642</span></td>
+                                        <td class="users_count" class="right"><span class="statsTopHi">24,598,183</span></td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                </tbody></table>
+                            </div>
+                        </div>
+                        <!--end  chart -->
+                        <div class="row page_content">
+                            <div class="col col-lg-7 col-md-7 col-sm-7 col-12 ">
+                                <div class="block">
+                                    <div class="block_header">
+                                        <div>Top games by current player count</div>
+                                    </div>
+                                    <div class="block_content block_content_inner">
+                                        <p class = "content block_content_inner-p">
+                                            <span><b>Current Players</b></span>
+                                            <span style="padding-left: 12px"><b>Peak Today</b></span>
+                                            <span width="20">Rust</span>
+                                            <span ><b>Game</b></span>
+                                        </p>
+                                        <p class="player_count_row" style="">
+                                                <span class="currentServers padding-left-35px">627,819</span>
+                                                <span class="currentServers padding-left-20px">807,333</span>
+                                                <span width = "20" class="currentServers-big"> Offensive</span>
+                                        </p>
+                                        <p class="player_count_row" style="">
+                                                <span class="currentServers padding-left-35px">529,843</span>
+                                                <span class="currentServers padding-left-20px">708,866</span>
+                                                <span width = "20" class="currentServers-big">Dota 2</span>
+                                        </p>
+                                        <p class="player_count_row" style="">
+                                                <span class="currentServers padding-left-35px">212,272</span>
+                                                <span class="currentServers padding-left-20px">339,944</span>
+                                                <span width = "20" class="currentServers-big">PUBG</span>
+                                        </p>
+                                        <p class="player_count_row" style="">
+                                                <span class="currentServers padding-left-35px">134,276</span>
+                                                <span class="currentServers padding-left-20px">211,602</span>
+                                                <span width = "20" class="currentServers-big">Apex </span>
+                                        </p>
+                                        <p class="player_count_row" style="">
+                                                <span class="currentServers padding-left-35px">132,521</span>
+                                                <span class="currentServers padding-left-20px">160,101</span>
+                                                <span width = "20" class="currentServers-big">Grand V</span>
+                                        </p>
+                                        <p class="player_count_row" style="">
+                                                <span class="currentServers padding-left-35px">113,606</span>
+                                                <span class="currentServers padding-left-20px">151,248</span>
+                                                <span width = "20" class="currentServers-big">NARAKA</span>
+                                        </p>
+                                        <p class="player_count_row" style="">
+                                                <span class="currentServers padding-left-35px">388,962</span>
+                                                <span class="currentServers padding-left-20px">105,473</span>
+                                                <span width = "20" class="currentServers-big">Warframe</span>
+                                        </p>
+                                        <p class="player_count_row" style="">
+                                                <span class="currentServers padding-left-35px">573,233</span>
+                                                <span class="currentServers padding-left-20px">101,526</span>
+                                                <span width = "20" class="currentServers-big">	Rust</span>
+                                        </p>
+                                        <p class="player_count_row" style="">
+                                                <span class="currentServers padding-left-35px">872,146</span>
+                                                <span class="currentServers padding-left-20px">083,260</span>
+                                                <span width = "20" class="currentServers-big">Fortress 2</span>
+                                        </p>
+                                        <p class="player_count_row" style="">
+                                                <span class="currentServers padding-left-35px">271,777</span>
+                                                <span class="currentServers padding-left-20px">273,379</span>
+                                                <span width = "20" class="currentServers-big">MIR4</span>
+                                        </p>
+                                        <div id="more_player_count_link">
+                                            <img src="https://store.cloudflare.steamstatic.com/public/images/ico/ico_arrow_blue_old.gif">&nbsp;<a id="detailLink" href="javascript:void(0)" onclick="$$('tr.player_count_row').invoke('show'); $('more_player_count_link').hide();">View all of the top 100 most-played games</a>
+                                        </div>
+                                    </div>
+                                </div>      
+                            </div>
+                            <div class="col col-lg-5 col-md-5 col-sm-5 col-12">
+                                <div class="block">
+                                    <div class="block_header"><div>Steam Hardware &amp; Software Survey</div></div>
+                                    <div class="block_content block_content_inner">
+                                        <a class="linkbar" href="https://store.steampowered.com/hwsurvey">Steam Hardware &amp; Software Survey</a>
+                                    </div>
+                                </div>
+                                <div class="block">
+                                    <div class="block_header"><div>Steam Stats</div></div>
+                                    <div class="block_content block_content_inner">
+                                        <a class="linkbar" href="https://store.steampowered.com/stats/content/">Steam Download Stats</a>
+                                    </div>
+                                    <div class="block_content block_content_inner">
+                                        <a class="linkbar" href="https://store.steampowered.com/stats/support">Steam Support Stats</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end main -->
+        
+        <!-- footer -->
+        <div class="container__main-maxBg" style="background: #171a21;">
+            <div class="main__content-reponsive footer reponsiveFooter" style="background: #171a21;">
+                <div class="row " style="padding:30px 0 30px 0;background: #171a21;">
+                    <div class="col col-lg-12 col-md-12 col-sm-12 footer" >
+                        <div class = "footer_text">
+                            <img src="https://store.akamai.steamstatic.com/public/images/footerLogo_valve_new.png" alt="">
+                            <div>
+                                <div style="color: #8F98A0;font-size: 12px;line-height: 16px; display: inline;">© 2021 Valve Corporation.  All rights reserved.  All trademarks are property of their respective owners in the US and other countries.</div>
+                                <div style="color: #8F98A0;font-size: 12px;line-height: 16px;display: inline;">VAT included in all prices where applicable. </div>
+                                <hr>
+                                <div class="responsive_optin_link">
+                                    <div class="btn_medium btnv6_grey_black" onclick="Responsive_RequestMobileView()">
+                                        <span>View mobile website</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="https://store.akamai.steamstatic.com/public/images/v6/logo_steam_footer.png" alt="">
+                        </div>
+                        <div class="rule"></div>
+                        <div class="valve_links" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+                            <a href="http://www.valvesoftware.com/about" target="_blank" rel="noreferrer">About Valve</a>
+                            &nbsp; | &nbsp;<a href="http://www.valvesoftware.com" target="_blank" rel="noreferrer">Jobs</a>
+                            &nbsp; | &nbsp;<a href="http://www.steampowered.com/steamworks/" target="_blank" rel="noreferrer">Steamworks</a>
+                            &nbsp; | &nbsp;<a href="https://partner.steamgames.com/steamdirect" target="_blank" rel="noreferrer">Steam Distribution</a>
+                            &nbsp; | &nbsp;<a href="https://help.steampowered.com/en/?snr=1_44_44_">Support</a>
+                                    &nbsp; | &nbsp;<a href="https://store.steampowered.com/digitalgiftcards/?snr=1_44_44_" target="_blank" rel="noreferrer">Gift Cards</a>
+                            &nbsp; | &nbsp;<a href="https://steamcommunity.com/linkfilter/?url=http://www.facebook.com/Steam" target="_blank" rel="noopener"><img src="https://store.akamai.steamstatic.com/public/images/ico/ico_facebook.gif"> Steam</a>
+                            &nbsp; | &nbsp;<a href="http://twitter.com/steam" target="_blank" rel="noreferrer"><img src="https://store.akamai.steamstatic.com/public/images/ico/ico_twitter.gif"> @steam</a>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end footer -->
+        
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- slick -->
+    <script type="text/javascript">
+        $('.one-time').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+        });
+    </script>
+
+    <!-- update js  -->
+    <script src="./js/headleJson.js"></script>
+    <script src="./js/app.js"></script>
+    </body>
+</html>

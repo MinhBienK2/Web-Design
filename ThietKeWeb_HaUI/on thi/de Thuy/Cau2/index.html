@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <table>
+            <thead>
+                <tr>
+                    <td>Nhập số thứ nhất </td>
+                    <td>
+                        <input type="text" value="" id="input1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nhập số thứ hai </td>
+                    <td>
+                        <input type="text" value="" id="input2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>BCNN của hai số trên là </td>
+                    <td>
+                        <input type="text" value="" id="output">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="result">Tìm</button>
+                    </td>
+                    <td>
+                        <button id="reset">Hủy Bỏ</button>
+                    </td>
+                </tr>
+
+            </thead>
+        </table>
+    <script>
+        const input1 = document.querySelector('#input1')
+        const input2 = document.querySelector('#input2')
+        const output = document.querySelector('#output')
+        const result = document.querySelector('#result')
+        const reset = document.querySelector('#reset')
+        console.log(input1,input2,output,result,reset)
+
+        result.onclick = () => {
+            let num1 = parseInt(input1.value)
+            let num2 = parseInt(input2.value)
+            
+            if(num1 ==0 || num2 ==0){
+                output.value ="NULL"
+            }
+            else if(num1 > num2){
+                for(let i=num1 ; i>=num1;i++){
+                    if(i%num1==0 && i%num2==0){
+                        output.value = i;
+                        break;
+                    }
+                }
+            }
+            else if(num1<num2){
+                for(let i=num2 ; i>=num2;i++){
+                    if(i%num1==0 && i%num2==0){
+                        output.value = i;
+                        break;
+                    }
+                }
+            }
+            else if(num1==num2){
+                for(let i=num2 ; i>=num2;i++){
+                    if(i%num1==0 && i%num2==0){
+                        output.value = i;
+                        break;
+                    }
+                }
+            }
+        }
+        reset.onclick = () => {
+            input1.value =''
+            input2.value =''
+            output.value =''
+        }
+
+    </script>
+</body>
+</html>

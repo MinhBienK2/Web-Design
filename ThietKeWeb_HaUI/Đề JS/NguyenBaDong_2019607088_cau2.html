@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      td {
+        text-align: center;
+      }
+
+      table {
+        background-color: rgb(130, 191, 248);
+      }
+    </style>
+  </head>
+  <body>
+    <table align="center" border="1" width="400">
+      <tr>
+        <th colspan="2" align="center">Kiểm tra xâu</th>
+      </tr>
+      <tr>
+        <td>Nhập xâu</td>
+        <td><input type="text" id="xau" required /></td>
+      </tr>
+      <tr>
+        <td>Nhập từ</td>
+        <td><input type="text" id="tu" required /></td>
+      </tr>
+      <tr>
+        <td>Thông báo kết quả</td>
+        <td><input type="text" id="ketqua" disabled /></td>
+      </tr>
+        <td colspan="2" align="center">
+          <button onclick="xoa()">Xóa</button>
+          <button onclick="tim()">Tìm kiếm</button>
+        </td>
+      </tr>
+    </table>
+    <script>
+      const inputxau = document.getElementById("xau");
+      const inputtu = document.getElementById("tu");
+      const inputketqua = document.getElementById("ketqua");
+
+      function xoa() {
+        inputxau.value = '';
+        inputtu.value = '';
+        inputketqua.value = '';
+      }
+
+      function tim() {
+        const xau = inputxau.value;
+        const tu = inputtu.value;
+        inputketqua.value = "";
+        console.log('tìm');
+
+        if (!xau || !tu) {
+          alert("Nhập thiếu thông tin");
+          return;
+        }
+
+        const vitri = xau.indexOf(tu);
+        
+        if(vitri + 1) {
+          inputketqua.value = `Từ ${tu} có xuất hiện và xuất hiện ở vị trí ${vitri}`;
+        } else {
+          inputketqua.value = `Từ ${tu} không xuất hiện`;
+        }
+      }
+    </script>
+  </body>
+</html>

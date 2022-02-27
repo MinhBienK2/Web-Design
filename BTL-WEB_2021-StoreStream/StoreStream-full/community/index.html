@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- CSS bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- slick -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <link rel="stylesheet" href="./css/grid.css" /> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="./css/styleHeader.css" />
+        <link rel="stylesheet" href="./css/styleSearch.css">
+        <link rel="stylesheet" href="./css/styleMain.css">
+        <link rel="stylesheet" href="./css/reponsive.css">
+        <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="./assets/repon.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <title>Store Stream</title>
+    </head>
+    <body>
+        <!-- start header -->
+        <div class="header">
+            <div class="grid wide header-grid">
+                <div class="row header-row">
+                    <!-- <div class="col li-12 m-12 c-12 header-col"> -->
+                    <div class="col col-lg-12 col-md-12 col-sm-12 header-col ">
+                        <!-- start nav mobile -->
+                        <!-- bars mobile -->
+                        <div class="header__icon-bars">
+                            <label for="check">
+                                <i class="fas fa-bars"> </i>
+                            </label>
+                            <input
+                                type="checkbox"
+                                id="check"
+                                name="checkbox"
+                                hidden
+                            />
+                            <label for="check" class="background-black"></label>
+                            <ul id="header__bars-nav">
+                                <li class = "header__bars_nav-border"><a href="">Login</a></li>
+                                <!-- Accordion Store -->
+                                <li class = "accordion-header header__bars_nav-border " id="headingTwo">
+                                    <a class="accordion-button collapsed nav-accordion" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" href="">Store</a>
+                                </li>
+                                  <ul class="accordion-collapse collapse nav-accordion" id="collapseTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <li class="accordion-body"><a href="">Home</a></li>
+                                    <li class="accordion-body"><a href="">Discovery Queue</a></li>
+                                    <li class="accordion-body"><a href="">Wishlist</a></li>
+                                    <li class="accordion-body"><a href="">points Shop</a></li>
+                                    <li class="accordion-body"><a href="">News</a></li>
+                                    <li class="accordion-body"><a href="">Stats</a></li>
+                                  </ul>
+                                <!-- Accordion Communiry -->
+                                <li class = "accordion-header header__bars_nav-border" id="headingThree">
+                                    <a class="accordion-button collapsed nav-accordion" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" href="">Communiry</a>
+                                </li>
+                                  <ul class="accordion-collapse collapse nav-accordion" id="collapseThree" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <li class="accordion-body"><a href="">Home</a></li>
+                                    <li class="accordion-body"><a href="">Discussions</a></li>
+                                    <li class="accordion-body"><a href="">Workshop</a></li>
+                                    <li class="accordion-body"><a href="">Market</a></li>
+                                    <li class="accordion-body"><a href="">Broadcasts</a></li>
+                                    <!-- <li class="accordion-body"><a href="">Stats</a></li> -->
+                                  </ul>
+                                <li class = "header__bars_nav-border"><a href="">Support</a></li>
+                                <li class="header__bars_nav-border" style="border: none; margin-top:0px;"><a href=""><span style="color: #8a8a8a;border: none;font-size: 0.75em;">Change language</span> </a></li>
+                                <li class="header__bars_nav-border" style="border: none; margin-top:0px;"><a href=""><span style="color: #8a8a8a;border: none;font-size: 0.75em;"> view desktop website</span></a></li>
+                                <div class="header__bars-nav-img">
+                                    <img src="	https://store.cloudflare.steamstatic.com/public/shared/images/responsive/logo_valve_footer.png" alt="">
+                                    <p>© Valve Corporation. Tous droits réservés. Toutes les marques commerciales sont la propriété de leurs titulaires aux États-Unis et dans d'autres pays. Politique de protection de la vie privée &nbsp| &nbsp Accord de souscription Steam Remboursements</p>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <!-- end nav mobile -->
+                        <img
+                            src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
+                            alt=""
+                        />
+                        <ul class="header__ul-one">
+                            <!-- Start list nav -->
+                            <li class="list-nar">
+                                <a href="">Store</a>
+                                <ul class="header__ul-two">
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">Discovery Queue</a></li>
+                                    <li><a href="">Wishlist</a></li>
+                                    <li><a href="">points Shop</a></li>
+                                    <li><a href="">News</a></li>
+                                    <li><a href="">Stats</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-nar">
+                                <a href="">Communiry</a>
+                                <ul class="header__ul-two">
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">Discovery</a></li>
+                                    <li><a href="">Workshop</a></li>
+                                    <li><a href="">Market Shop</a></li>
+                                    <li><a href="">Broadcasts</a></li>
+                                </ul>
+                            </li>
+                            <!-- end list nav -->
+                            <li><a href="">About</a></li>
+                            <li><a href="">Support</a></li>
+                        </ul>
+                        <div class="header__login">
+                            <div class="header__login-install">
+                                <div class="install-icon">
+                                    <i style="
+                                    font-size: 17px;margin-right:5px;" class="fab fa-instalod"></i>
+                                </div>
+                                <p >Install Steam</p>
+                            </div>
+                            <a href=""><span style="border-right:2px solid #b8b6b4;padding-right:10px;">login</span></a>
+                            <!-- <hr /> -->
+                            <a href=""><span>Language</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end header  -->
+        <div class="content">
+            <!-- header -->
+            <div class="community__home-header">
+              <div class="header-title">
+                Community Activity
+              </div>
+              <div class="header-subtitle">
+                Community and official content for all games and software on Steam.
+              </div>
+              <!-- container login -->
+              <div class="container-login">
+                <div class="row gx-1">
+                  <!-- login -->
+                  <div class="col-lg-8 d-lg-block d-md-none d-none">
+                    <div class="box-login">
+                      <div class="row gx-1">
+                        <!-- login left -->
+                        <div class="login-content col-lg-6">
+                          <p>Welcome to the Steam Community</p>
+                          <p>Log in to the Steam Community to find more Hubs to browse.</p>
+                          <button class="button-login">Sign In</button>
+                          <span>or</span>
+                          <button class="button-login">Join Steam</button>
+                          <p class="join-steam">
+                            New to Steam?
+                            <a href="">Learn more.</a>
+                          </p>
+                        </div>
+        
+                        <!-- login right -->
+                        <div class="col-lg-6">
+                          <div class="header-list">
+                            <p>popular hubs</p>
+                            <div class="item-games">
+                              <a href="">
+                                <img src="./assets/image/login/1.jpg" alt="">
+                              </a>
+                              <div class="item-text">
+                                <a class="itme-title" href="">Live2DViewerEX</a>
+                                <p class="item-num">43 new workshop items this week</p>
+                              </div>
+                            </div>
+                            <div class="item-games">
+                              <a href="">
+                                <img src="./assets/image/login/2.jpg" alt="">
+                              </a>
+                              <div class="item-text">
+                                <a class="itme-title" href="">ELEX</a>
+                                <p class="item-num">187 new screenshots this week</p>
+                              </div>
+                            </div>
+                            <div class="item-games">
+                              <a href="">
+                                <img src="./assets/image/login/3.jpg" alt="">
+                              </a>
+                              <div class="item-text">
+                                <a class="itme-title" href="">Don't Starve Together</a>
+                                <p class="item-num">399 new workshop collections this week</p>
+                              </div>
+                            </div>
+                            <div class="item-games">
+                              <a href="">
+                                <img src="./assets/image/login/4.jpg" alt="">
+                              </a>
+                              <div class="item-text">
+                                <a class="itme-title" href="">Resident Evil Village</a>
+                                <p class="item-num">19 new artwork this week</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- header search -->
+                  <div class="col-lg-4 col-sm-12 col-xs-12">
+                    <div class="box-login">
+                      <div class="col-lg-12 col-sm-6 col-xs-12 pr-15">
+                        <p class="search-title">Find hubs</p>
+                        <div class="box-search">
+                          <input class="input-search" type="search" name="" id="" placeholder="Search for products">
+                          <button class="btn-search">
+                            <i class="fas fa-search"></i>
+                          </button>
+                        </div>
+                      </div>
+        
+                      <div class="search-divider"></div>
+        
+                      <div class="col-lg-12 col-sm-6 col-xs-12 pl-15">
+                        <p class="search-title">Find people</p>
+                        <div class="box-search">
+                          <input class="input-search" type="search" name="" id="" placeholder="Search for friends">
+                          <button class="btn-search">
+                            <i class="fas fa-search"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="repon-login">
+                    <select class="tab-select" name="" id="">
+                      <option value="" selected>All</option>
+                      <option value="">Screenshots</option>
+                      <option value="">Artwork</option>
+                      <option value="">Broadcasts</option>
+                      <option value="">Video</option>
+                      <option value="">Workshop</option>
+                      <option value="">News</option>
+                      <option value="">Guides</option>
+                      <option value="">Reviews</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- btn menu tablet & mobile -->
+            <div class="repon__btn-more">
+              <i class="fas fa-bars"></i>
+            </div>
+            <div class="overlay"></div>
+            <div class="repon__menu-more">
+              <div class="repon__menu-content">
+                <p class="menu-title">Popular Hubs</p>
+                <div class="item-menu">
+                  <div class="menu__item-icon">
+                    <a href="">
+                      <img src="./assets/image/icon/1.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="menu__item-text">
+                    <p class="text-title">Persona 5 Strikers</p>
+                    <a href="" class="text-num">1 new artwork this week</a>
+                  </div>
+                </div>
+        
+                <div class="item-menu">
+                  <div class="menu__item-icon">
+                    <a href="">
+                      <img src="./assets/image/icon/2.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="menu__item-text">
+                    <p class="text-title">Marvel's Guardians of the Galaxy</p>
+                    <a href="" class="text-num">12 new artwork this week</a>
+                  </div>
+                </div>
+        
+                <div class="item-menu">
+                  <div class="menu__item-icon">
+                    <a href="">
+                      <img src="./assets/image/icon/3.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="menu__item-text">
+                    <p class="text-title">No Man's Sky</p>
+                    <a href="" class="text-num">13 new artwork this week</a>
+                  </div>
+                </div>
+        
+                <div class="item-menu">
+                  <div class="menu__item-icon">
+                    <a href="">
+                      <img src="./assets/image/icon/4.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="menu__item-text">
+                    <p class="text-title">Assassin's Creed Odyssey</p>
+                    <a href="" class="text-num">24 new artwork this week</a>
+                  </div>
+                </div>
+              </div> 
+            </div>
+        
+            <!-- tabs -->
+            <div class="community__home-tabs d-lg-block d-md-none d-none">
+              <div class="list-tab">
+                <a href="" class="item-tab tab-active">
+                  <span>All</span>
+                </a>
+                <a href="" class="item-tab">
+                  <span>Screenshots</span>
+                </a>
+                <a href="" class="item-tab">
+                  <span>Artwork</span>
+                </a>
+                <a href="" class="item-tab">
+                  <span>Broadcasts</span>
+                </a>
+                <a href="" class="item-tab">
+                  <span>Videos</span>
+                </a>
+                <a href="" class="item-tab">
+                  <span>Workshop</span>
+                </a>
+                <a href="" class="item-tab">
+                  <span>News</span>
+                </a>
+                <a href="" class="item-tab">
+                  <span>Guides</span>
+                </a>
+                <a href="" class="item-tab">
+                  <span>Reviews</span>
+                </a>
+              </div>
+              <div class="tab-hr"></div>
+            </div>
+        
+            <!-- option sort -->
+            <div class="community__home-sort">
+              <div class="sort-buttons">
+                <span class="viewing">Viewing</span>
+                <button class="btn-sort sort-popular">most popular</button>
+                <button class="btn-sort sort-recent">most recent</button>
+              </div>
+            </div>
+        
+        
+            <!-- cart content -->
+            <div class="community__home-cart">
+              <!-- 1 -->
+              <div class="row gx-2">
+                <div class="col-lg-6 col-sm-6 col-xs-12">
+                  <div class="container-content item-card">
+                    <div class="user-review">
+                      <div class="found-help">
+                        <span>3,705 people found this review helpful</span>
+                        <br>
+                        <span>2,117 people found this review funny</span>
+                        <div class="icon-award">
+                          <i class="fas fa-award"></i>
+                          435
+                        </div>
+                      </div>
+                      <img class="small-logo" src="./assets/image/news/1.jpg" alt="">
+                      <div class="review-info">
+                        <img src="./assets/image/news/icon-like.png" alt="">
+                        <div class="title-hours">
+                          <p class="title">Recommended</p>
+                          <p class="hours">11.3 hrs on record</p>
+                        </div>
+                      </div>
+                      <div class="review-content">
+                        <p class="date-posted">Posted: December 8</p>
+                        “Hey, come over.”
+                        <br>
+                        “I can’t, I’m playing Halo Infinite.”
+                      </div>
+        
+                      <div class="header-card">
+                        <a href="">Halo Infinite (Campaign)</a>
+                        <p class="comment-count">
+                          <i class="fas fa-comments"></i>
+                          68
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-xs-12">
+                  <div class="container-content item-card">
+                    <div class="user-review">
+                      <div class="found-help">
+                        <span>147 people found this review helpful</span>
+                        <br>
+                        <span>103 people found this review funny</span>
+                        <div class="icon-award">
+                          <i class="fas fa-award"></i>
+                          56
+                        </div>
+                      </div>
+                      <img class="small-logo" src="./assets/image/news/2.jpg" alt="">
+                      <div class="review-info">
+                        <img src="./assets/image/news/icon-like.png" alt="">
+                        <div class="title-hours">
+                          <p class="title">Recommended</p>
+                          <p class="hours">13.2 hrs on record</p>
+                        </div>
+                      </div>
+                      <div class="review-content">
+                        <p class="date-posted">Posted: December 8</p>
+                        It's all fun and games for newcomers until their monsters gets a fistful from Oakleyman.
+                      </div>
+        
+                      <div class="header-card">
+                        <a href="">Monster Rancher 1 & 2 DX</a>
+                        <p class="comment-count">
+                          <i class="fas fa-comments"></i>
+                          8
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="row gx-2">
+                <div class="col-lg-4 col-sm-4 col-xs-12">
+                  <div class="container-content item-card">
+                    <div class="user-review">
+                      <div class="found-help">
+                        <span>518 people found this review helpful</span>
+                        <br>
+                        <span>137 people found this review funny</span>
+                        <div class="icon-award">
+                          <i class="fas fa-award"></i>
+                          43
+                        </div>
+                      </div>
+                      <img class="small-logo" src="./assets/image/news/3.jpg" alt="">
+                      <div class="review-info">
+                        <img src="./assets/image/news/icon-like.png" alt="">
+                        <div class="title-hours">
+                          <p class="title">Recommended</p>
+                          <p class="hours">6.2 hrs on record</p>
+                        </div>
+                      </div>
+                      <div class="review-content">
+                        <p class="date-posted">Posted: December 7</p>
+                        It's more Ghost Recon than Ghost Recon
+                      </div>
+        
+                      <div class="header-card">
+                        <a href="">Thunder Tier One</a>
+                        <p class="comment-count">
+                          <i class="fas fa-comments"></i>
+                          4
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- item -->
+                <div class="col-lg-4 col-sm-4 col-xs-12">
+                  <div class="container-content item-card">
+                    <div class="user-review">
+                      <h3 class="card-type">: Guide</h3>
+                      <div class="card-title">
+                        <img src="./assets/image/news/3.gif" alt="">
+                        <p>
+                          How to make an effective wallpaper in wallpaper engine
+                        </p>
+                      </div>
+                      <p class="card-desc">
+                        Want to make a good looking wallpaper and don't know where to start? I got you covered. All likes and
+                        favorites are appreciated as it will allow more people to see this guide.
+                      </p>
+                      <div class="ranking-comment">
+                        <p class="star-ranking">
+                          <i class="start-active fas fa-star"></i>
+                          <i class="start-active fas fa-star"></i>
+                          <i class="start-active fas fa-star"></i>
+                          <i class="start-active fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          213 ratings
+                        </p>
+                        <p class="award-comment">
+                          <span class="award">
+                            <i class="fas fa-award"></i>
+                            4
+                          </span>
+                          <span class="comment">
+                            <i class="fas fa-comments"></i>
+                            6
+                          </span>
+                        </p>
+                      </div>
+                      <div class="header-card">
+                        <p>Flos</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- item -->
+                <div class="col-lg-4 col-sm-4 col-xs-12">
+                  <div class="container-content item-card">
+                    <div class="user-review">
+                      <h3 class="card-type">Warhammer: Vermintide 2: Guide</h3>
+                      <div class="card-title">
+                        <img src="./assets/image/news/5.jfif" alt="">
+                        <p>
+                          Warrior Priest of Sigmar DLC Guide
+                        </p>
+                      </div>
+                      <p class="card-desc">
+                        Guide for Warrior Priest mechanic/talent, sixe DLC weapons, and some build theory.
+                      </p>
+                      <div class="ranking-comment">
+                        <p class="star-ranking">
+                          <i class="start-active fas fa-star"></i>
+                          <i class="start-active fas fa-star"></i>
+                          <i class="start-active fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          69 ratings
+                        </p>
+                        <p class="award-comment">
+                          <span class="award">
+                            <i class="fas fa-award"></i>
+                            8
+                          </span>
+                          <span class="comment">
+                            <i class="fas fa-comments"></i>
+                            8
+                          </span>
+                        </p>
+                      </div>
+                      <div class="header-card">
+                        <p>Warhammer: Vermintide 2</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- 3 -->
+              <div class="row gx-2">
+                <div class="col-lg-6 col-sm-6 col-xs-12">
+                  <div class="container-content item-card content-img">
+                    <div class="user-review">
+                      <div class="card-image">
+                        <img src="./assets/image/news/6.jfif" alt="">
+                      </div>
+                      <div class="controls">
+                        <div>
+                          <span class="box-icon">
+                            <i class="fas fa-thumbs-up"></i>
+                          </span>
+                          <span class="box-icon">
+                            <i class="fas fa-thumbs-down"></i>
+                          </span>
+                          <span class="box-icon">
+                            <i class="yellow-color fas fa-award"></i>
+                            Award
+                          </span>
+                        </div>
+                        <div class="count-like">
+                          <i class="active-controls fas fa-thumbs-up"></i>
+                          5
+                          <i class="active-controls fas fa-award"></i>
+                          7
+                          <i class="fas fa-comments"></i>
+                          3
+                        </div>
+                      </div>
+                      <div class="header-card">
+                        <p>DEATH STRANDING</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-xs-12">
+                  <div class="container-content item-card content-img">
+                    <div class="user-review">
+                      <div class="card-image">
+                        <img src="./assets/image/news/7.jfif" alt="">
+                      </div>
+                      <div class="controls">
+                        <div>
+                          <span class="box-icon">
+                            <i class="fas fa-thumbs-up"></i>
+                          </span>
+                          <span class="box-icon">
+                            <i class="fas fa-thumbs-down"></i>
+                          </span>
+                          <span class="box-icon">
+                            <i class="yellow-color fas fa-award"></i>
+                            Award
+                          </span>
+                        </div>
+                        <div class="count-like">
+                          <i class="active-controls fas fa-thumbs-up"></i>
+                          6
+                          <i class="active-controls fas fa-award"></i>
+                          9
+                          <i class="fas fa-comments"></i>
+                          0
+                        </div>
+                      </div>
+                      <div class="header-card">
+                        <p>Tales of Arise</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- 4 -->
+              <div class="row gx-2">
+                <div class="col-lg-6 col-sm-6 col-xs-12">
+                  <div class="container-content item-card content-img">
+                    <div class="user-review">
+                      <div class="card-image">
+                        <img src="./assets/image/news/8.jfif" alt="">
+                      </div>
+                      <div class="controls">
+                        <div>
+                          <span class="box-icon">
+                            <i class="fas fa-thumbs-up"></i>
+                          </span>
+                          <span class="box-icon">
+                            <i class="fas fa-thumbs-down"></i>
+                          </span>
+                          <span class="box-icon">
+                            <i class="yellow-color fas fa-award"></i>
+                            Award
+                          </span>
+                        </div>
+                        <div class="count-like">
+                          <i class="active-controls fas fa-thumbs-up"></i>
+                          12
+                          <i class="active-controls fas fa-award"></i>
+                          6
+                          <i class="fas fa-comments"></i>
+                          9
+                        </div>
+                      </div>
+                      <div class="header-card">
+                        <p>Dragon Age™ Inquisition</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-xs-12">
+                  <div class="container-content item-card content-img">
+                    <div class="user-review">
+                      <div class="card-image">
+                        <img src="./assets/image/news/9.jfif" alt="">
+                      </div>
+                      <div class="controls">
+                        <div>
+                          <span class="box-icon">
+                            <i class="fas fa-thumbs-up"></i>
+                          </span>
+                          <span class="box-icon">
+                            <i class="fas fa-thumbs-down"></i>
+                          </span>
+                          <span class="box-icon">
+                            <i class="yellow-color fas fa-award"></i>
+                            Award
+                          </span>
+                        </div>
+                        <div class="count-like">
+                          <i class="active-controls fas fa-thumbs-up"></i>
+                          76
+                          <i class="active-controls fas fa-award"></i>
+                          3
+                          <i class="fas fa-comments"></i>
+                          9
+                        </div>
+                      </div>
+                      <div class="header-card">
+                        <p>The Elder Scrolls V: Skyrim Special Edition</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="row gx-2">
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                  <div class="container-content card-full">
+                    <div class="user-review">
+                      <div class="image-full">
+                        <img src="./assets/image/news/10.jfif" alt="">
+                      </div>
+                      <div class="controls">
+                        <div>
+                          <span class="box-icon">
+                            <i class="fas fa-thumbs-up"></i>
+                          </span>
+                          <span class="box-icon">
+                            <i class="fas fa-thumbs-down"></i>
+                          </span>
+                          <span class="box-icon">
+                            <i class="yellow-color fas fa-award"></i>
+                            Award
+                          </span>
+                        </div>
+                        <div class="count-like">
+                          <i class="active-controls fas fa-thumbs-up"></i>
+                          12
+                          <i class="active-controls fas fa-award"></i>
+                          6
+                          <i class="fas fa-comments"></i>
+                          9
+                        </div>
+                      </div>
+                      <div class="header-card">
+                        <p>Rise of the Tomb Raider</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- col 8-4 -->
+              <div class="row">
+                <div class="col-lg-8 col-sm-8 col-xs-12">
+                  <div class="container-content item-card content-eight">
+                    <div class="user-review">
+                      <div class="image-eight">
+                        <img src="./assets/image/news/11.jfif" alt="">
+                      </div>
+                      <div class="controls">
+                        <div>
+                          <span class="box-icon">
+                            <i class="fas fa-thumbs-up"></i>
+                          </span>
+                          <span class="box-icon">
+                            <i class="fas fa-thumbs-down"></i>
+                          </span>
+                          <span class="box-icon">
+                            <i class="yellow-color fas fa-award"></i>
+                            Award
+                          </span>
+                        </div>
+                        <div class="count-like">
+                          <i class="active-controls fas fa-thumbs-up"></i>
+                          7
+                          <i class="active-controls fas fa-award"></i>
+                          3
+                          <i class="fas fa-comments"></i>
+                          9
+                        </div>
+                      </div>
+                      <div class="header-card">
+                        <p>Marvel's Guardians of the Galaxy</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-4 col-sm-4 col-xs-12 position">
+                  <div class="bg-item"></div>
+                  <div class="container-content item-card content-eight">
+                    <div class="user-review">
+                      <div class="image-eight">
+                        <img src="./assets/image/news/12.jfif" alt="">
+                      </div>
+                      <div class="ranking-four">
+                        <p class="star-ranking">
+                          <i class="start-active fas fa-star"></i>
+                          <i class="start-active fas fa-star"></i>
+                          <i class="start-active fas fa-star"></i>
+                          <i class="start-active fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          213 ratings
+                        </p>
+                        <p class="award-comment">
+                          <span class="award">
+                            <i class="fas fa-award"></i>
+                            4
+                          </span>
+                          <span class="comment">
+                            <i class="fas fa-comments"></i>
+                            6
+                          </span>
+                        </p>
+                      </div>
+                      <div class="header-card">
+                        <p>Slay the Spire</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-on-top">
+              <a href="#">
+                <span>Back On Top</span>
+              </a>
+            </div>
+          </div>
+        
+        
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- slick -->
+    <script type="text/javascript">
+        $('.one-time').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+        });
+    </script>
+
+    <!-- update js  -->
+    <!-- <script src="./js/headleJson.js"></script> -->
+    <script src="./js/app.js"></script>
+    <script src="./assets/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        talbe,tbody,tr,th{
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <th colspan="2">Sắp xếp Mảng</th>
+            </tr>
+            <tr>
+                <th>Nhập Mảng</th>
+                <th><input type="text" id="input" value=""></th>
+            </tr>
+            <tr>
+                <th>Mảng sau khi sắp xếp</th>
+                <th><input type="text" value="" id ="sort"></th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <button id="reset">Hủy</button>
+                    <button id="result">Sắp xếp</button>
+                </th>
+                
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        const $ = document.querySelector.bind(document)
+        const input = $('#input')
+        const sort = $('#sort')
+        const reset = $('#reset')
+        const result = $('#result')
+  
+        reset.onclick = e => {
+            console.log()
+        }
+
+        result.onclick = e => {
+            // console.log(input.value.split(',').indexOf("0"))
+            const arr = input.value.split(',')
+            sortF(arr);
+            // console.log(arr)
+            // for(let i = 0 ;i<arr.length;i++){
+            //     const vt0 = arr.indexOf("0")
+            //     if(i<=vt0 && Number.parseInt(arr[i])%2!=0)
+            //         for(let j=i;j<vt0;j++) {
+            //             let gan = arr[j]
+            //             arr[j] = arr[j+1]
+            //             arr[j+1] = gan
+            //         }
+            //     if(i>=vt0 && Number.parseInt(arr[i])%2==0)
+            //         for(let j=i;j>vt0;j--) {
+            //             let gan = arr[j]
+            //             arr[j] = arr[j-1]
+            //             arr[j-1] = gan
+            //         }
+            // }
+            // console.log(arr)
+        }
+
+        function sortF(arr) {
+            // const arr = input.value.split(',')
+            console.log(arr)
+            console.log(arr.indexOf("0"))
+            for(let i = 0 ;i<arr.length;i++){
+                const vt0 = arr.indexOf("0")
+                if(arr.indexOf("0")!=-1){
+                    if(i<=vt0 && Number.parseInt(arr[i])%2!=0)
+                        for(let j=i;j<vt0;j++) {
+                            let gan = arr[j]
+                            arr[j] = arr[j+1]
+                            arr[j+1] = gan
+                        }
+                    else if(i>=vt0 && Number.parseInt(arr[i])%2==0)
+                        for(let j=i;j>vt0;j--) {
+                            let gan = arr[j]
+                            arr[j] = arr[j-1]
+                            arr[j-1] = gan
+                        }
+                }
+            }
+            if(arr.indexOf("0")==-1)
+                arr.sort((a,b) => -1
+                )
+            console.log(arr)
+        }
+    </script>
+</body>
+</html>

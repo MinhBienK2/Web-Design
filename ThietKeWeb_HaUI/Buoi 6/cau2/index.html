@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        li {
+            list-style-type: none;
+            border:1px solid black;
+            background-color: green;
+            color:yellow;
+            width:100px;
+            padding:10px 20px; 
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class ="moveColor-js" >Giới Thiệu</li>
+        <li class ="moveColor-js" >Tin tức</li>
+        <li class ="moveColor-js" >Sản phẩm</li>
+        <li class ="moveColor-js" >trợ giúp</li>
+    </ul>
+
+    <script> 
+        let getElementsLi = document.querySelectorAll('.moveColor-js');
+        let n = getElementsLi.length;99
+        for(let i=0;i<n;i++)
+        {
+            getElementsLi[i].addEventListener("mouseenter",function (e) {
+                Object.assign(e.target.style, {
+                    color: 'red',
+                    backgroundColor: 'blue',
+                })
+            })
+            getElementsLi[i].addEventListener("mouseleave",function (e) {
+                Object.assign(e.target.style, {
+                    color: 'red',
+                    backgroundColor: 'green',
+                })
+            })
+            // getElementsLi[i].addEventListener("mouseenter",styleElement);
+            // getElementsLi[i].removeEventListener("mouseleave",styleElement);
+
+        }
+        function styleElement() {
+            Object.assign(this.style, {
+                    color: 'yellow',
+                    backgroundColor: 'blue',
+                })
+        }
+
+
+    </script>
+</body>
+</html>

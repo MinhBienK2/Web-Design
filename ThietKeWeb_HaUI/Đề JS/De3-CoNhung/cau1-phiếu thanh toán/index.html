@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        span {
+            display:inline-block;
+            min-width:130px;
+            text-align:left;
+        }
+        th {
+            text-align:left;
+        }
+        table , tbody,tr ,th{
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+        input{
+            padding:0;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <th><h1>Thanh Toán tiền điện</h1></th>
+            </tr>
+            <tr>
+                <th><span>chủ hộ</span> <input type="text" id = "name" value=""></th>
+            </tr>
+            <tr>
+                <th><span>Chỉ số cũ</span> <input type="text" id = "chiSoC" value="">(Kw)</th>
+            </tr>
+            <tr>
+                <th><span>Chỉ số mới</span> <input type="text" id = "chiSoM" value="">(VNĐ)</th>
+            </tr>
+            <tr>
+                <th><span>Đơn giá</span> <input type="text" id = "donGia" value="">(VNĐ)</th>
+            </tr>
+            <tr>
+                <th><span>Số tiền thanh toán</span> <input type="text" id = "price" value="">(VNĐ)</th>
+            </tr>
+            <tr>
+                <th><button id="result">Tính</button></th>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        const $ = document.querySelector.bind(document);
+        const name = $('#name')
+        const chiSoC = $('#chiSoC')
+        const chiSoM = $('#chiSoM')
+        const donGia = $('#donGia')
+        const price = $('#price')
+        const result = $('#result')
+
+        result.onclick = (e) => {
+            if(name.value =='' || chiSoC.value =='' || chiSoM.value =='' || donGia.value =='')
+                alert("Kiểm tra lại phần nhập thông tin ...")
+            const c = Number.parseInt(chiSoC.value);
+            const m = Number.parseInt(chiSoM.value);
+            const dg = Number.parseFloat(donGia.value)
+            if(m-c<=10){
+                price.value = (m-c)*dg;
+                alert("Hộ nghèo")
+            }
+                
+            else{
+                price.value = 10*dg + (m-c-10)*dg*2
+                alert("Hộ giầu ")
+            }
+                
+        }       
+    </script>
+</body>
+</html>

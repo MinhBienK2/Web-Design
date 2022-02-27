@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- CSS bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- slick -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <link rel="stylesheet" href="./css/grid.css" /> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="./css/styleHeader.css" />
+        <!-- <link rel="stylesheet" href="./css/styleSearch.css"> -->
+        <!-- <link rel="stylesheet" href="./css/styleMain.css"> -->
+        <link rel="stylesheet" href="./css/reponsive.css">
+    <link rel="stylesheet" href="About.css">
+
+        <title>Store Stream</title>
+    </head>
+    <body>
+        <!-- start header -->
+        <div class="header">
+            <div class="grid wide header-grid">
+                <div class="row header-row">
+                    <!-- <div class="col li-12 m-12 c-12 header-col"> -->
+                    <div class="col col-lg-12 col-md-12 col-sm-12 header-col ">
+                        <!-- start nav mobile -->
+                        <!-- bars mobile -->
+                        <div class="header__icon-bars">
+                            <label for="check">
+                                <i class="fas fa-bars"> </i>
+                            </label>
+                            <input
+                                type="checkbox"
+                                id="check"
+                                name="checkbox"
+                                hidden
+                            />
+                            <label for="check" class="background-black"></label>
+                            <ul id="header__bars-nav">
+                                <li class = "header__bars_nav-border"><a href="">Login</a></li>
+                                <!-- Accordion Store -->
+                                <li class = "accordion-header header__bars_nav-border " id="headingTwo">
+                                    <a class="accordion-button collapsed nav-accordion" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" href="">Store</a>
+                                </li>
+                                  <ul class="accordion-collapse collapse nav-accordion" id="collapseTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <li class="accordion-body"><a href="">Home</a></li>
+                                    <li class="accordion-body"><a href="">Discovery Queue</a></li>
+                                    <li class="accordion-body"><a href="">Wishlist</a></li>
+                                    <li class="accordion-body"><a href="">points Shop</a></li>
+                                    <li class="accordion-body"><a href="">News</a></li>
+                                    <li class="accordion-body"><a href="">Stats</a></li>
+                                  </ul>
+                                <!-- Accordion Communiry -->
+                                <li class = "accordion-header header__bars_nav-border" id="headingThree">
+                                    <a class="accordion-button collapsed nav-accordion" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" href="">Communiry</a>
+                                </li>
+                                  <ul class="accordion-collapse collapse nav-accordion" id="collapseThree" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <li class="accordion-body"><a href="">Home</a></li>
+                                    <li class="accordion-body"><a href="">Discussions</a></li>
+                                    <li class="accordion-body"><a href="">Workshop</a></li>
+                                    <li class="accordion-body"><a href="">Market</a></li>
+                                    <li class="accordion-body"><a href="">Broadcasts</a></li>
+                                    <!-- <li class="accordion-body"><a href="">Stats</a></li> -->
+                                  </ul>
+                                <li class = "header__bars_nav-border"><a href="">Support</a></li>
+                                <li class="header__bars_nav-border" style="border: none; margin-top:0px;"><a href=""><span style="color: #8a8a8a;border: none;font-size: 0.75em;">Change language</span> </a></li>
+                                <li class="header__bars_nav-border" style="border: none; margin-top:0px;"><a href=""><span style="color: #8a8a8a;border: none;font-size: 0.75em;"> view desktop website</span></a></li>
+                                <div class="header__bars-nav-img">
+                                    <img src="	https://store.cloudflare.steamstatic.com/public/shared/images/responsive/logo_valve_footer.png" alt="">
+                                    <p>© Valve Corporation. Tous droits réservés. Toutes les marques commerciales sont la propriété de leurs titulaires aux États-Unis et dans d'autres pays. Politique de protection de la vie privée &nbsp| &nbsp Accord de souscription Steam Remboursements</p>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <!-- end nav mobile -->
+                        <img
+                            src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
+                            alt=""
+                        />
+                        <ul class="header__ul-one">
+                            <!-- Start list nav -->
+                            <li class="list-nar">
+                                <a href="">Store</a>
+                                <ul class="header__ul-two">
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">Discovery Queue</a></li>
+                                    <li><a href="">Wishlist</a></li>
+                                    <li><a href="">points Shop</a></li>
+                                    <li><a href="">News</a></li>
+                                    <li><a href="">Stats</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-nar">
+                                <a href="">Communiry</a>
+                                <ul class="header__ul-two">
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">Discovery</a></li>
+                                    <li><a href="">Workshop</a></li>
+                                    <li><a href="">Market Shop</a></li>
+                                    <li><a href="">Broadcasts</a></li>
+                                </ul>
+                            </li>
+                            <!-- end list nav -->
+                            <li><a href="">About</a></li>
+                            <li><a href="">Support</a></li>
+                        </ul>
+                        <div class="header__login">
+                            <div class="header__login-install">
+                                <div class="install-icon">
+                                    <i style="
+                                    font-size: 17px;margin-right:5px;" class="fab fa-instalod"></i>
+                                </div>
+                                <p >Install Steam</p>
+                            </div>
+                            <a href=""><span style="border-right:2px solid #b8b6b4;padding-right:10px;">login</span></a>
+                            <!-- <hr /> -->
+                            <a href=""><span>Language</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end header  -->
+        <div id="main">
+      
+
+            <div class="slider">
+              <div class="grids__full">
+                  <div class="grids">
+                      <div class="slider__about grids__column2">
+                          <img src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" alt="logoslider" class="slider__logo-img">
+                          <h2 class="slider__desc">                Steam là nơi hoàn hảo để chơi, tạo và nói về trò chơi điện tử.
+                          </h2>
+                          <div class="slider__about-input">
+                              <div class="slider__about--input-1">
+                                  <input type="radio" class="slider__input1">
+                                  <label class="slider__input" for="">Xếp hàng</label>
+                                  <p class="slider__input-quanty">24,498,768</p>
+                              </div>
+      
+                              <div class="slider__about--input-2">
+                                  <input type="radio" class="slider__input1">
+                                  <label class="slider__input" for="">Tiền đặt cọc</label>
+                                  <p class="slider__input-quanty">6,498,768</p>
+                              </div>
+                          </div>
+      
+                          <div class="slider__btn">
+                              <a href="" class="slider__btn-install">Cài đặt STEAM</a>
+                          </div>
+      
+                          <p class="slider__link-icon">
+                              Cũng có sẵn trên :
+                          </p>
+                      </div>
+      
+                      <div class="slider__about2 ">
+                          <video class="slider__video" autoplay muted loop>
+                              <source src="https://cdn.cloudflare.steamstatic.com/store/about/videos/about_hero_loop_web.webm" type="video/webm">
+                          </video>
+                          
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <a href="#hd"  class="smood-croll">
+              <div class="grids__full">
+                  <div class="grids">
+                      Tìm hiểu thêm <br> <br>
+                      <i class="smood-croll-icon ti-angle-down"></i>
+                  </div>
+              </div>
+          </a>
+      
+          <div id="hd" class="aboutGame">
+              <div class="grids__full">
+                  <div class="grids">
+                      <h1 class="aboutGame__heading">Truy cập tức thì vào trò chơi</h1>
+                      <div class="aboutGame__desc">
+                          <span>Tận hưởng các ưu đãi độc quyền, cập nhật tự động và 
+                              hơn thế nữa từ sự lựa chọn hơn 30,000 trò chơi, AAA 
+                              hoặc indie.</span>
+      
+                      </div>
+                      <br>
+                      <a href="" class="aboutGame__link">
+                          Duyệt qua cửa hàng
+                          <i class="aboutGame__link-icon ti-angle-right"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      
+      
+          <div class="content">
+              <div class="grids__full">
+                  <div class="grids">
+                      <div class="content__community">
+                          <div class="content__hero grids__column-5">
+                              <h1 class="content__hero-heading">Tham gia vào cộng đồng</h1>
+                              <div class="content__hero-desc">
+                                  <span>Gặp gỡ mọi người, tham gia vào nhóm, thành 
+                                      lập Gia tộc, tham gia vào các cuộc thảo luận
+                                      trong trò chơi và hơn thế nữa&nbsp;! Với hơn 100 triệu
+                                      bạn bè(hoặc đối thủ) tiềm năng, bạn vẫn chưa thấy vui.</span>
+                              </div>
+                              <div class="content__hero-link">
+                                  <a href="" class="cta__btn-link">
+                                      Cộng đồng
+                                      <i class="cta__btn-icon ti-angle-right"></i>
+                                  </a>
+                              </div>
+                          </div>
+      
+                          <div class="content__ctahero">
+                              <img src="https://cdn.cloudflare.steamstatic.com/store/about/cta_hero_community.png" alt="" class="content__ctahero-img">
+                          </div>
+                      </div>
+      
+                      <div class="content__section-hardware">
+                          <div class="content__ctahardware grids__column-7">
+                              <img src="https://cdn.cloudflare.steamstatic.com/store/about/cta_hero_hardware.png" alt="" class="content__ctahardware-img">
+                          </div>
+      
+                          <div class="content__hardware">
+                              <h1 class="content__hardware-heading">Khám phá phần cứng Steam</h1>
+                              <div class="content__hardware-desc">
+                                  <span>Chúng tôi đã tạo ra Bộ điều khiển hơi nước và
+                                      công nghệ VR cho phép HTC Vive cải thiện trải
+                                      nghiệm chơi game trên PC.</span>
+                              </div>
+                              <div class="content__hardware-link">
+                                  <a href="" class="cta__btn-link">
+                                      Khám phá phần cứng Steam
+                                      <i class="cta__btn-icon ti-angle-right"></i>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+      
+                      <div class="content__community">
+                          <div class="content__hero grids__column-5">
+                              <h1 class="content__hero-heading">Xuất bản trò chơi của bạn</h1>
+                              <div class="content__hero-desc">
+                                  <span>Steamworks là một bộ công cụ và dịch vụ nhằm giúp
+                                      các nhà xuất bản cũng như nhóm phát triển tận dụng tối
+                                      đa việc phân phối trò chơi của họ trên Steam.</span>
+                              </div>
+                              <div class="content__hero-link">
+                                  <a href="" class="cta__btn-link">
+                                      Tìm hiểu thêm về Steamworks
+                                      <i class="cta__btn-icon ti-angle-right"></i>
+                                  </a>
+                              </div>
+                          </div>
+      
+                          <div class="content__ctahero">
+                              <img src="https://cdn.cloudflare.steamstatic.com/store/about/cta_hero_community.png" alt="" class="content__ctahero-img">
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+      
+              <div class="clear"></div>
+          </div>
+      
+          <div class="content__main">
+              <div class="grids__full">
+                  <div class="grids">
+                      <div class="content__main-header">
+                          <h1 class="content__main-heading">Đặc trưng</h1>
+                          <div class="content__main-about">Chúng tôi liên tục mang đến cho các bản cập
+                              nhật và tính năng mới cho Steam&nbsp;:</div>
+                      </div>
+      
+                      
+                      <div class="content__main-steam">
+                          <div class="content__section-steam">
+                              <i class="content__steam-icon ti-themify-favicon"></i>
+                              <h3 class="content__steam-head">Trò chuyện trên Steam</h3>
+                              <div class="content__steam-desc">Nói chuyện với các liên hệ của bạn hoặc toàn 
+                                  bộ nhóm thông qua các kênh thoại hoặc văn bản
+                                  mà không cần rời khỏi Steam. Video, tweet, GIF
+                                  và hơn thế nữa được hỗ trợ. Sử dụng có điều độ.</div>
+                          </div>
+      
+                          <div class="content__section-steam">
+                              <i class="content__steam-icon ti-themify-favicon"></i>
+                              <h3 class="content__steam-head">Quyền truy cập sớm vào trò chơi</h3>
+                              <div class="content__steam-desc"> Khám phá, chơi và tham gia vào quá trình phát
+                                  triển của trò chơi. Khám phá các sản phẩm mới 
+                                  trong bản xem trước và đưa ra ý kiến của bạn.</div>
+                          </div>
+      
+                          <div class="content__section-steam">
+                              <i class="content__steam-icon ti-themify-favicon"></i>
+                              <h3 class="content__steam-head">Có sẵn trên điện thoại di động</h3>
+                              <div class="content__steam-desc">Truy cập Steam từ mọi nơi với ứng dụng Steam dành cho
+                                  thiết bị di động trên Android và iOS.</div>
+                          </div>
+      
+                          <div class="content__section-steam">
+                              <i class="content__steam-icon ti-themify-favicon"></i>
+                              <h3 class="content__steam-head">Hội thảo Steam</h3>
+                              <div class="content__steam-desc">Tạo, khám phá và tải xuống nội dung và
+                                  mỹ phẩm do người chơi tạo cho hơn 1&nbsp;000 trò chơi.</div>
+                          </div>
+      
+                          <div class="content__section-steam">
+                              <i class="content__steam-icon ti-themify-favicon"></i>
+                              <h3 class="content__steam-head">Hỗ trợ cho bộ điều khiển</h3>
+                              <div class="content__steam-desc">Steam khuyến khích các nhóm phát triển bao
+                                  gồm hỗ trợ bộ điều khiển trong trò chơi của họ,
+                                  bao gồm bộ điều khiển PlayStation, Xbox và Nintendo.</div>
+                          </div>
+      
+      
+                          <div class="content__section-steam">
+                              <i class="content__steam-icon ti-themify-favicon"></i>
+                              <h3 class="content__steam-head">Đa ngôn ngữ</h3>
+                              <div class="content__steam-desc">Điều quan trọng đối với chúng tôi là tạo ra một
+                                  cộng đồng toàn cầu, đó là lý do tại sao khách hàng của
+                                  chúng tôi hỗ trợ 28 ngôn ngữ và luôn nhiều hơn nữa
+                                  trong tương lai.</div>
+                          </div>
+      
+                          <div class="content__section-steam">
+                              <i class="content__steam-icon ti-themify-favicon"></i>
+                              <h3 class="content__steam-head">Mua sắm dễ dàng</h3>
+                              <div class="content__steam-desc">Cửa hàng của chúng tôi chấp nhận hơn 100 phương thức thanh toán và
+                                  35 loại tiền tệ,mang đến cho bạn sự linh hoạt tuyệt vời
+                                  để thanh toán theo ý muốn.</div>
+                          </div>
+                      </div>
+      
+                      <div class="content__main-bottom">
+                          <div class="content__bottom-about grids__column2">
+                              <h3 class="content__bottom-heading">Và nhiều hơn nữa...</h3>
+                              <div class="content__bottom-desc">Mở khóa thành tích, đọc bài đánh giá, khám phá các
+                                  trò chơi được cá nhân đề xuất cho bạn và hơn thế nữa.</div>
+                          </div>
+      
+                          <div class="content__bottom-install">
+                              <div class="slider__btn">
+                                  <a href="" class="slider__btn-install">Cài đặt STEAM</a>
+                              </div>
+      
+                              <p class="slider__link-icon">
+                                  Cũng có sẵn trên :
+                              </p>
+                          </div>
+      
+                          <div class="clear"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="clear"></div>
+          </div>
+      
+      
+            <footer class="footer">
+              <div class="footer__space"></div>
+              <div class="footer__main">
+                <div class="footer__main__img">
+                  <a href=""
+                    ><img
+                      src="https://help.steampowered.com/public/images/footerLogo_valve_new.png"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="footer__main__text">
+                  <div class="footer__main__text-1">
+                    © 2021 Valve Corporation. Đã đăng ký Bản quyền. Tất cả các nhãn
+                    hiệu là tài sản của chủ sở hữu chúng ở Hoa Kỳ và các quốc gia
+                    khác.
+                  </div>
+                  <div class="footer__main__text-2">
+                    <p>Đã bao gồm VAT cho tất cả các mức giá (nếu có)</p>
+                    <ul class="footer__main__text-2__sup">
+                      <li><a href="">Chính sách bảo mật</a></li>
+                      <li><a href="">Thông báo pháp lý </a></li>
+                      <li><a href="">Thỏa thuận đăng ký Steam</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__space"></div>
+      
+              <div class="footer__after">
+                <ul class="footer__after__sup">
+                  <li><a href="">Giới thiệu về Van</a></li>
+                  <li><a href="">Steamworks</a></li>
+                  <li><a href="">Việc làm</a></li>
+                  <li><a href="">Phân phối trên Steam</a></li>
+                  <li><a href="">Thẻ quà tặng</a></li>
+                </ul>
+              </div>
+            </footer>
+          </div>
+        
+        
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- slick -->
+    <script type="text/javascript">
+        $('.one-time').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+        });
+    </script>
+
+    <!-- update js  -->
+    <!-- <script src="./js/headleJson.js"></script> -->
+    <script src="./js/app.js"></script>
+    </body>
+</html>

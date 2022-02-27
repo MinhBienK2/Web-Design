@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            label {
+                display: inline-block;
+                min-width: 100px;
+                margin:10px 0;
+            }
+            div{
+                display: inline;
+            }
+            .comment p,
+            .comment div {
+                display: inline;
+                color:red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form action="">
+            <div class="comment">
+                <label for="firstName">first name </label>
+                <input type="text" name="firstName" id="firstName"/>
+                <div id="demo1"></div>
+            </div>
+            <br>
+            <div class="comment">
+                <label for="lastName">Last name </label>
+                <input type="text" name="lastName" id="lastName" />
+                <div id="demo2"></div>
+            </div>
+            <br>
+            <div class="comment">
+                <label for="email">email </label>
+                <input type="text" name="email" id="email" />
+                <div id="demo3"></div>
+            </div>
+            <br>
+            <div class="comment">
+                <label for="phone">Phone number</label>
+                <input type="text" name="phoneNumber" id="phone" />
+                <div id="demo4"></div>
+            </div>
+        </form>
+
+        <script>
+            let getComment = document.querySelectorAll('.comment');
+            for(let i=0;i<getComment.length;i++)
+            {
+                // getComment[i].onmouseenter = function (e) {
+                //     e.target.querySelector(`#demo${i+1}`).innerHTML= `
+                //         <h1> 123</h1>
+                //     `
+                // }   
+
+                getComment[i].addEventListener("mouseenter",function(e) {
+                    let getLabel = e.target.querySelector('input[type="text"]');        // lấy element của thẻ label
+                    let rendenElement = e.target.querySelector(`#demo${i+1}`);          // lấy element của thẻ div có id là demo
+                    rendenElement.innerHTML = `
+                        <p class = "propagation" >Nhập ${getLabel.name}</p>
+                    `
+                    
+                })
+                getComment[i].addEventListener("mouseleave",function(e) {
+                    let getLabel = e.target.querySelector('input[type="text"]'); // lấy element của thẻ label
+                    let rendenElement = e.target.querySelector(`#demo${i+1}`); // lấy element của thẻ div có id là demo
+                    rendenElement.innerHTML = ``;
+                })
+            }
+        </script>
+        
+    </body>
+</html>

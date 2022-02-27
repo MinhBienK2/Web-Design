@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main{
+            background-color: #fff;
+            display: inline-block;
+            text-align: center;
+        }
+        label{
+            display: inline-block;
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <label for="">Nhập số thứ nhất : </label>
+        <input type="text" value="" id="so1">
+        <br>
+        <label for="">Nhập số thứ hai : </label>
+        <input type="text" value="" id="so2">
+        <br>
+        <label for="">BCNN của hai số trên là : </label>
+        <input type="text" value="" id="result">
+        <br>
+        <button id="tim">Tìm</button>
+        <button id="huy">Hủy Bỏ</button>
+    </div>
+
+    <script>
+        const so1 = document.querySelector('#so1')
+        const so2 = document.querySelector('#so2')
+        const result = document.querySelector('#result')
+        const tim = document.querySelector('#tim')
+        const huy = document.querySelector('#huy')
+        console.log(so1,so2,result,tim,huy)
+
+        tim.onclick = () => {
+            let num1 = parseInt(so1.value)
+            let num2 = parseInt(so2.value)
+            
+            if(num1 ==0 || num2 ==0){
+                result.value ="NULL"
+            }
+            else if(num1 > num2){
+                for(let i=num1 ; i>=num1;i++){
+                    if(i%num1==0 && i%num2==0){
+                        result.value = i;
+                        break;
+                    }
+                }
+            }
+            else if(num1<num2){
+                for(let i=num2 ; i>=num2;i++){
+                    if(i%num1==0 && i%num2==0){
+                        result.value = i;
+                        break;
+                    }
+                }
+            }
+            else if(num1==num2){
+                for(let i=num2 ; i>=num2;i++){
+                    if(i%num1==0 && i%num2==0){
+                        result.value = i;
+                        break;
+                    }
+                }
+            }
+        }
+        huy.onclick = () => {
+            so1.value =''
+            so2.value =''
+            result.value =''
+        }
+
+    </script>
+</body>
+</html>

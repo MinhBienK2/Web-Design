@@ -1,0 +1,60 @@
+﻿Trong JavaScript sự kiện OnMouseOver xảy ra khi nào?
+A. Khi di chuyển con chuột qua một đối tượng trong form
+B. Khi một đối tượng trong form mất focus
+C. Khi một đối tượng trong form nhận focus
+D. Khi kích chuột vào nút lệnh
+ANSWER:A
+Kết quả của đoạn code sau: <body onload =”hello()”> <script> function hello() {          window.open(“http://timoday.edu.vn”,”Chao ban den voi timoday.edu.vn”);}</script>?
+A. Khi chạy thì mở thêm một cửa sổ mới gọi trang timoday.edu.vn
+B. Hiện một trang timoday.edu.vn duy nhất 
+C. Khi kết thúc thì một site khác hiện ra
+D. Không chạy được vì sai
+ANSWER:A
+Trong JavaScript sự kiện OnUnload xảy ra khi nào?
+A. Khi kết thúc một chương trình
+B. Khi kích chuột
+C. Khi bắt đầu chạy chương trình
+D. Khi di chuyển chuột qua
+ANSWER:A
+Trong JavaScript sự kiện OnClick xảy ra khi nào?
+A. Khi click chuột vào một đối tượng trong form
+B. Khi một đối tượng trong form mất focus
+C. Khi một đối tượng trong form nhận focus
+D. Khi click chuột vào nút lệnh
+ANSWER:A
+Trong JavaScript sự kiện OnChange xảy ra khi nào?
+A. Xảy ra khi giá trị của một trường trong form được người dùng thay đổi dữ liệu
+B. Khi một đối tượng trong form mất focus
+C. Khi kích chuột vào nút lệnh
+D. Khi một đối tượng trong form nhận focus
+   ANSWER:A
+'$’ hiện diện trong đối tượng RegExp được gọi là 
+A. Một “Siêu ký tự”
+B. Một ký tự
+C. Một mẫu
+D. Một “Siêu dữ liệu”
+ANSWER:A
+Cho đoạn code var text = "testing: 1, 2, 3";var pattern = /\d+/g; câu lệnh nào sau dùng để kiểm tra
+A. text.test(pattern)
+B. text==pattern
+C. text.equals(pattern)
+D.  pattern.test(text)
+ANSWER:A
+Biểu thức chính quy để khớp với bất kỳ ký tự nào không nằm giữa dấu ngoặc là
+A.  [^…]
+B. […]
+C.  [^]
+D. [\ D]
+ANSWER:A
+Phương thức thực hiện thao tác tìm kiếm và thay thế các chuỗi để đối sánh mẫu là
+A.  replace()
+B. searchandreplace()
+C. add()
+D. edit()
+ANSWER:A
+Kết quả đoạn code sau:  System.out.println(Pattern.matches("[amn]", "abcd"));
+A.  true
+B. false
+C. undefined
+D. a
+ANSWER:A

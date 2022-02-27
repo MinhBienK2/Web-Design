@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        table,tr , th {
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr >
+                <th colspan="2">
+                    Chương trình tra tuổi
+                </th>
+            </tr>
+            <tr>
+                <th rowspan="1">
+                    Nhập năm:
+                </th>
+                <th rowspan="1">
+                    <input type="text" id="iput1">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    là năm:
+                </th>
+                <th>
+                    <input type="text" id="iput2">
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <button id = "btn1">Xóa</button>
+                    <button id = "btn2">Tra</button>
+                </th>
+            </tr>
+            
+        </thead>
+    </table>
+        
+    <script>
+         let textInput = document.querySelector('#iput1');
+        let textOutput = document.querySelector('#iput2');
+        let DeleteBtn = document.querySelector('#btn1');
+        let checkBtn = document.querySelector('#btn2');
+        
+        function check() {
+            checkBtn.onclick = function(e) {
+                 textOutput.value=  date(textInput.value);
+
+            }
+        }
+        function deleteElement(){
+            DeleteBtn.onclick = function(e){
+                textInput.value ='';
+                textOutput.value ='';
+            }
+        }
+        check();
+        deleteElement();
+        
+        function date(number) {
+            let text = '';
+            let can = number;
+            while(can-10>=0)
+            {
+                can-=10;
+            }
+            if(can == 0)
+                text += 'Canh';
+            else if(can==1)
+                text+='Tân';
+            else if(can==2)
+                text+='Nhâm';
+            else if(can==3)
+                text+='Quí';
+            else if(can==4)
+                text+='Giáp';
+            else if(can==5)
+                text+='Ất';
+            else if(can==6)
+                text+='Bính';
+            else if(can==7)
+                text+='Đinh';
+            else if(can==8)
+                text+='Mậu';
+            else text+='Kỷ';
+            // -----------------
+            text+=' ';
+            // -----------------
+            let chi = number;
+            while(chi-12>0)
+            {
+                chi-=12;
+            }
+            if(chi == 0)
+                text += 'Thân';
+            else if(chi==1)
+                text+='Dậu';
+            else if(chi==2)
+                text+='Tuất';
+            else if(chi==3)
+                text+='Hợi';
+            else if(chi==4)
+                text+='Tý';
+            else if(chi==5)
+                text+='Sửu';
+            else if(chi==6)
+                text+='Dần';
+            else if(chi==7)
+                text+='Mậu';
+            else if(chi==8)
+                text+='Thìn';
+            else if(chi==9)
+                text+='Tỵ';
+            else if(chi==10)
+                text+='Ngọ';
+            else text+='Mùi';
+            return text;
+        }
+    </script>
+</body>
+</html>

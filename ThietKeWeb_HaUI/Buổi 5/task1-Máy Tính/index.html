@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            button {
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="btn" value="1">1</button>
+        <button class="btn" value="2">2</button>
+        <button class="btn" value="3">3</button>
+        <button class="btn" value="4">4</button>
+        <button class="btn" value="5">5</button>
+        <button class="btn" value="+">+</button>
+        <button class="btn" value="-">-</button>
+        <button class="btn" value="*">*</button>
+        <button class="btn" value="/">/</button>
+        <button class="btn" value="6">6</button>
+        <button class="btn" value="7">7</button>
+        <button class="btn" value="8">8</button>
+        <button class="btn" value="9">9</button>
+        <button class="btn" value="0">0</button>
+        <button class="btn" value="=">=</button>
+        <button class="btn" value="AC">AC</button>
+        <h1>kết quả là : </h1>
+        <p id="demo"></p>
+        <input type="text" value=""; id="demo1">
+        <script> 
+            function resultSum(){
+                let result = document.getElementById("demo");
+                result.innerText =eval(numberSum1);
+            }
+            function reset(){
+                let result = document.getElementById("demo");
+                result.innerText =``;  
+            }
+            let getBtn = document.querySelectorAll(".btn");
+            let i;
+            let numberSum1=' ';
+            for (i = 0; i < getBtn.length; ++i) {
+                getBtn[i].onclick = function (e) {
+                    if(e.target.value=="=")
+                         resultSum();
+                    if(e.target.value=="AC")
+                    {
+                        reset();
+                        numberSum1=e.target.value=``;
+
+                    }
+                    numberSum1+=e.target.value;
+                     console.log(numberSum1); 
+                }  
+            }   
+            
+        </script>
+    </body>
+</html>

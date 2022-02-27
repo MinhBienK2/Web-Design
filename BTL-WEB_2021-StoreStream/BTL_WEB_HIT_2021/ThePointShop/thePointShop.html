@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- CSS bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- slick -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="stylesheet" href="./css/grid.css" /> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="../css/styleHeader.css" />
+  <!-- <link rel="stylesheet" href="./css/styleSearch.css"> -->
+  <!-- <link rel="stylesheet" href="./css/styleMain.css"> -->
+  <link rel="stylesheet" href="../css/reponsive.css">
+  <!-- loc -->
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="./assets/repon.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Store Stream</title>
+</head>
+
+<body>
+  <!-- start header -->
+  <div class="header">
+    <div class="grid wide header-grid">
+      <div class="row header-row">
+
+        <div class="col col-lg-12 col-md-12 col-sm-12 header-col ">
+
+          <div class="header__icon-bars">
+            <label for="check">
+              <i class="fas fa-bars"> </i>
+            </label>
+            <input type="checkbox" id="check" name="checkbox" hidden />
+            <label for="check" class="background-black"></label>
+            <ul id="header__bars-nav">
+              <li class="header__bars_nav-border"><a href="">Login</a></li>
+
+              <li class="accordion-header header__bars_nav-border " id="headingTwo">
+                <a class="accordion-button collapsed nav-accordion" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" href="">Store</a>
+              </li>
+              <ul class="accordion-collapse collapse nav-accordion" id="collapseTwo" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <li class="accordion-body"><a href="../index.html">Home</a></li>
+                <li class="accordion-body"><a href="">Discovery Queue</a></li>
+                <li class="accordion-body"><a href="">Wishlist</a></li>
+                <li class="accordion-body"><a href="../ThePointShop/thePointShop.html">points Shop</a></li>
+                <li class="accordion-body"><a href="">News</a></li>
+                <li class="accordion-body"><a href="../Stats/stats.html">Stats</a></li>
+              </ul>
+
+              <li class="accordion-header header__bars_nav-border" id="headingThree">
+                <a class="accordion-button collapsed nav-accordion" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                  href="">Communiry</a>
+              </li>
+              <ul class="accordion-collapse collapse nav-accordion" id="collapseThree" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <li class="accordion-body"><a href="../Community/community.html">Home</a></li>
+                <li class="accordion-body"><a href="">Discussions</a></li>
+                <li class="accordion-body"><a href="">Workshop</a></li>
+                <li class="accordion-body"><a href="">Market</a></li>
+                <li class="accordion-body"><a href="">Broadcasts</a></li>
+
+              </ul>
+              <li class="header__bars_nav-border"><a href="../support/support.html">Support</a></li>
+              <li class="header__bars_nav-border" style="border: none; margin-top:0px;"><a href=""><span
+                    style="color: #8a8a8a;border: none;font-size: 0.75em;">Change language</span> </a></li>
+              <li class="header__bars_nav-border" style="border: none; margin-top:0px;"><a href=""><span
+                    style="color: #8a8a8a;border: none;font-size: 0.75em;"> view desktop website</span></a></li>
+              <div class="header__bars-nav-img">
+                <img
+                  src="	https://store.cloudflare.steamstatic.com/public/shared/images/responsive/logo_valve_footer.png"
+                  alt="">
+                <p>© Valve Corporation. Tous droits réservés. Toutes les marques commerciales sont la propriété de
+                  leurs titulaires aux États-Unis et dans d'autres pays. Politique de protection de la vie privée
+                  &nbsp| &nbsp Accord de souscription Steam Remboursements</p>
+              </div>
+            </ul>
+          </div>
+          <a href="../index.html">
+            <img src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
+              alt="" />
+          </a>
+          <ul class="header__ul-one">
+
+            <li class="list-nar">
+              <a href="">Store</a>
+              <ul class="header__ul-two">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="">Discovery Queue</a></li>
+                <li><a href="">Wishlist</a></li>
+                <li><a href="./thePointShop.html">points Shop</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="../Stats/stats.html">Stats</a></li>
+              </ul>
+            </li>
+            <li class="list-nar">
+              <a href="">Communiry</a>
+              <ul class="header__ul-two">
+                <li><a href="../Community/community.html">Home</a></li>
+                <li><a href="">Discovery</a></li>
+                <li><a href="">Workshop</a></li>
+                <li><a href="">Market Shop</a></li>
+                <li><a href="">Broadcasts</a></li>
+              </ul>
+            </li>
+
+            <li><a href="../about/about.html">About</a></li>
+            <li><a href="../support/support.html">Support</a></li>
+          </ul>
+          <div class="header__login">
+            <div class="header__login-install">
+              <div class="install-icon">
+                <i style="
+                                    font-size: 17px;margin-right:5px;" class="fab fa-instalod"></i>
+              </div>
+              <p>Install Steam</p>
+            </div>
+            <a href=""><span style="border-right:2px solid #b8b6b4;padding-right:10px;">login</span></a>
+
+            <a href=""><span>Language</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-point">
+    <a class="header-title">The Points Shop</a>
+  </div>
+  <!-- end header  -->
+  <div class="container-ponit">
+    <div class="menu-repon">
+      <div class="menu__repon-item">How Points Work</div>
+      <div class="menu__repon-item menu-active">Featured Items</div>
+      <div class="menu__repon-item">Items From Games</div>
+      <div class="menu__repon-item">Item Bundles</div>
+      <div class="menu__repon-item">Community Awards</div>
+      <div class="menu__repon-item">Avatar</div>
+      <div class="menu__repon-item">Backgrounds</div>
+      <div class="menu__repon-item">Seasonal Badge</div>
+      <div class="menu__repon-item">Game Profiles</div>
+      <div class="menu__repon-item">Artist Profiles</div>
+    </div>
+    <div class="container-content">
+      <!-- nav left -->
+      <div class="nav-left">
+        <div class="">
+          <div class="part-nav">
+            <a href="" class="item-nav">
+              <div class="block-icon">
+                <i class="fas fa-question icon-question"></i>
+              </div>
+              <div class="nav-title">How Points Work</div>
+            </a>
+            <a href="" class="item-nav">
+              <div class="block-icon">
+                <i class="fas fa-home"></i>
+              </div>
+              <div class="nav-title">Featured Items</div>
+            </a>
+            <a href="" class="item-nav">
+              <div class="block-icon">
+                <i class="fas fa-book"></i>
+              </div>
+              <div class="nav-title">Items From Games</div>
+            </a>
+            <a href="" class="item-nav">
+              <div class="block-icon">
+                <i class="far fa-clone"></i>
+              </div>
+              <div class="nav-title">Item Bundles</div>
+            </a>
+            <a href="" class="item-nav">
+              <div class="block-icon">
+                <i class="fas fa-award"></i>
+              </div>
+              <div class="nav-title">Community Awards</div>
+            </a>
+          </div>
+
+          <div class="part-nav border-menu">
+            <p class="name-item">Profile Items</p>
+            <a href="" class="item-nav">
+              <div class="block-icon">
+                <i class="far fa-user"></i>
+              </div>
+              <div class="nav-title">Avatar</div>
+            </a>
+            <a href="" class="item-nav">
+              <div class="block-icon">
+                <i class="far fa-image"></i>
+              </div>
+              <div class="nav-title">Backgrounds</div>
+            </a>
+            <a href="" class="item-nav">
+              <div class="block-icon">
+                <i class="fas fa-award"></i>
+              </div>
+              <div class="nav-title">Seasonal Badge</div>
+            </a>
+            <a href="" class="item-nav">
+              <div class="block-icon">
+                <i class="fas fa-shapes"></i>
+              </div>
+              <div class="nav-title">Game Profiles</div>
+            </a>
+            <a href="" class="item-nav">
+              <div class="block-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <div class="nav-title">
+                Artist Profiles
+                <i class="fas fa-star"></i>
+              </div>
+            </a>
+            <a href="" class="item-nav">
+              <div class="block-icon">
+                <i class="far fa-address-card"></i>
+              </div>
+              <div class="nav-title">Profile Showcases</div>
+            </a>
+          </div>
+          <div class="part-nav border-menu">
+            <p class="name-item">Chat Items</p>
+            <a href="" class="item-nav">
+              <div class="block-icon">
+                <i class="far fa-sticky-note"></i>
+              </div>
+              <div class="nav-title">Animated Stickers</div>
+            </a>
+            <a href="" class="item-nav">
+              <div class="block-icon">
+                <i class="fas fa-comment-alt"></i>
+              </div>
+              <div class="nav-title">Chat Effects</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- content -->
+      <div class="container__layout-point">
+        <div class="content-point">
+          <div class="item-layout">
+            <div class="banner-top">
+              <div class="header-banner">
+                <img class="coin-image" src="./assets/image/coin_single.png" alt="">
+                <img class="icons-floor" src="./assets/image/icons_floor.png" alt="">
+                <div class="container-icon">
+                  <img class="banner-chicken" src="./assets/image/csgoChat_128_chickenr_dance.png" alt="">
+                  <img class="banner-bored" src="./assets/image/bored.png" alt="">
+                  <img class="banner-hugs" src="./assets/image/csgoChat_128_hugs.png" alt="">
+                  <img class="banner-happy" src="./assets/image/happy.png" alt="">
+                  <img class="banner-bombox" src="./assets/image/boombox.png" alt="">
+                  <img class="banner-dance" src="./assets/image/dance.png" alt="">
+                </div>
+              </div>
+              <div class="header-title">
+                <div class="top-title">Buy games, earn points</div>
+                <div class="title-sub">Customize your Steam experience with Points Shop items</div>
+              </div>
+              <a href="">
+                <button class="btn-header">How Points Work</button>
+              </a>
+            </div>
+
+            <!-- title intro -->
+            <div class="section-content">
+              <div class="section-intro">
+                <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1"
+                  class="icon-paint">
+                  <path d="M49.3,41.6l-19.6-20l9.8-9.6c0.6,0.1,1.2,0.1,1.7-0.1c1.6-0.4,2.8-1.8,3.4-3.8c0.6-2.1,2-3.6,3.1-4.1
+                            c0.5-0.2,0.9-0.3,1.2-0.2c0.4,0.2,0.8,0,1-0.4c0.2-0.4,0-0.8-0.4-1c-2.1-1-3.9-1.5-5.7-1.5c-1.8,0-3.5,0.6-5.1,1.7
+                            c-2,1.5-3.1,3-3.2,4.6c0,0.3,0,0.5,0,0.8L26,17.9l-9.6-9.8c0-0.3,0.1-0.5,0-0.8c-0.1-1.6-1.2-3.1-3.2-4.6C11.7,1.5,10,0.9,8.2,0.9
+                            c-1.7,0-3.6,0.5-5.7,1.5C2.2,2.7,2,3.1,2.2,3.5c0.2,0.4,0.6,0.6,1,0.4c0.3-0.1,0.7,0,1.2,0.2c1.1,0.5,2.5,2,3.1,4.1
+                            c0.6,2,1.8,3.3,3.4,3.8c0.6,0.2,1.2,0.2,1.7,0.1l9.8,9.6l-19.6,20c-0.9,0.9-0.9,2.3,0,3.2c0.9,0.9,2.3,0.9,3.2,0l20-19.6
+                            c-0.1-0.1-0.3-0.3-0.4-0.4l20.5,20c0.9,0.9,2.3,0.9,3.2,0C50.1,43.9,50.1,42.5,49.3,41.6z M39.7,3.9c1.4-1.1,3.5-2.1,6.9-1
+                            c-1.6,1-2.9,2.8-3.5,4.8c-0.4,1.4-1.2,2.4-2.3,2.7c-0.4,0.1-0.9,0.1-1.3,0c0,0,0,0-0.1,0c-0.4-0.1-0.7-0.3-1.1-0.6
+                            c-0.1,0-0.1-0.1-0.2-0.1c0,0,0,0,0,0c-0.1-0.1-0.2-0.2-0.3-0.3c0,0,0,0-0.1-0.1c-0.3-0.4-0.5-0.8-0.7-1.2c0,0,0,0,0,0
+                            c-0.1-0.2-0.1-0.5-0.1-0.7C37.2,6.3,38,5.1,39.7,3.9z M36.2,9.7C36.2,9.7,36.2,9.7,36.2,9.7c0.1,0.2,0.2,0.4,0.4,0.5
+                            c0,0,0.1,0.1,0.1,0.1c0.1,0.2,0.3,0.3,0.5,0.5c0,0,0,0,0,0c0.1,0.1,0.3,0.2,0.4,0.3c0.1,0,0.1,0.1,0.2,0.1c0.1,0,0.1,0.1,0.2,0.1
+                            l-1.3,1.3L34.9,11L36.2,9.7z M33.9,12.1l1.7,1.7l-6.9,6.8L27.1,19L33.9,12.1z M13.8,9.7c-0.1,0.1-0.1,0.1-0.2,0.1
+                            c-0.3,0.3-0.7,0.5-1.1,0.6c0,0,0,0-0.1,0c-0.4,0.1-0.9,0.1-1.3,0c-1-0.3-1.9-1.3-2.3-2.7C8.4,5.7,7,3.9,5.5,2.9
+                            c3.4-1.1,5.5-0.1,6.9,1c1.6,1.2,2.5,2.4,2.6,3.5c0,0.2,0,0.5-0.1,0.7c0,0,0,0,0,0c-0.1,0.4-0.3,0.8-0.7,1.2c0,0,0,0-0.1,0.1
+                            C14,9.4,13.9,9.5,13.8,9.7C13.8,9.7,13.8,9.7,13.8,9.7z M14.1,11.4c0.1,0,0.1-0.1,0.2-0.1c0.1,0,0.1-0.1,0.2-0.1
+                            c0.1-0.1,0.3-0.2,0.4-0.3c0,0,0,0,0,0c0.2-0.2,0.3-0.3,0.5-0.5c0,0,0.1-0.1,0.1-0.1c0.1-0.2,0.3-0.3,0.4-0.5c0,0,0,0,0,0l1.3,1.3
+                            l-1.7,1.7L14.1,11.4z M4.9,43.7c-0.3,0.3-0.7,0.3-1,0c-0.3-0.3-0.3-0.7,0-1l19.6-20l1.5,1.4L4.9,43.7z M48.2,43.7
+                            c-0.3,0.3-0.7,0.3-1,0l-30.6-30l1.7-1.7l30,30.6C48.4,43,48.4,43.5,48.2,43.7z"></path>
+                </svg>
+                <div class="intro-container">
+                  <p class="intro-title">
+                    Introducing Artist Profiles
+                  </p>
+                  <p class="intro-desc">
+                    Equip all new Artist Profiles featuring unique art featured in Steam sales and events.
+                  </p>
+                </div>
+                <a href="" class="btn-banner">View all</a>
+              </div>
+            </div>
+
+            <div class="section-content">
+              <div class="section-three section-sale">
+                <div class="section-background"></div>
+                <div class="sale-text">
+                  <p class="text-title">Autumn Sale 2021 Items</p>
+                  <a href="" class="btn-see-all">See All</a>
+                </div>
+
+                <div class="section-items">
+                  <div class="container-items">
+                    <div class="section-item">
+                      <div class="icon-top">
+                        <img src="./assets/image/icon-top-left.jpg" alt="">
+                      </div>
+                      <img src="./assets/image/item1.jpg" alt="">
+                      <div class="footer-item">
+                        <div class="footer-text">
+                          <p class="title-item">Murugiah</p>
+                          <div class="sub-item">
+                            <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                              <path
+                                d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                              </path>
+                            </svg>
+                            <p>Game Profile</p>
+                          </div>
+                        </div>
+                        <div class="footer-price">
+                          <i class="fas fa-coins"></i>
+                          5000
+                        </div>
+                      </div>
+                    </div>
+                    <div class="section-item">
+                      <div class="icon-top">
+                        <img src="./assets/image/icon-top-left.jpg" alt="">
+                      </div>
+                      <img
+                        src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/1792490/b561b673e40595b1a91d2c1cdffb915b30066803.png"
+                        alt="">
+                      <div class="footer-item">
+                        <div class="footer-text">
+                          <p class="title-item">Acorn Strut</p>
+                          <div class="sub-item">
+                            <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                              <path
+                                d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                              </path>
+                            </svg>
+                            <p>Animated Sticker</p>
+                          </div>
+                        </div>
+                        <div class="footer-price">
+                          <i class="fas fa-coins"></i>
+                          3000
+                        </div>
+                      </div>
+                    </div>
+                    <div class="section-item">
+                      <div class="icon-top">
+                        <img src="./assets/image/icon-top-left.jpg" alt="">
+                      </div>
+                      <img
+                        src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/730/5a726c956a85ba9b60b9b9400e8df94c547dfdcf.jpg"
+                        alt="">
+                      <div class="footer-item">
+                        <div class="footer-text">
+                          <p class="title-item">Pumpkin Head</p>
+                          <div class="sub-item">
+                            <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                              <path
+                                d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                              </path>
+                            </svg>
+                            <p>Animated Sticker</p>
+                          </div>
+                        </div>
+                        <div class="footer-price">
+                          <i class="fas fa-coins"></i>
+                          1000
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-six">
+              <div class="title-section">
+                <p>New Featured Items</p>
+                <a href="" class="btn-see-all">See All (45)</a>
+                <div class="title-line"></div>
+                <div class="title-actions">
+                  <i class="fas fa-chevron-left"></i>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+
+              <div class="container-six">
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img
+                    src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/1768020/13ddb24c0bdaf63a19b43e379f1b2036a901999d.jpg"
+                    alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Cyberpsychosis</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Game Profile</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      4500
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img
+                    src="https://allimages.sgp1.digitaloceanspaces.com/wikilaptopcom/2021/01/1609865185_720_Chia-se-100-hinh-nen-game-Full-HD-dep-sieu.jpg"
+                    alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Rogue AI</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Game Profile</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      3600
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img src="https://toigingiuvedep.vn/wp-content/uploads/2021/04/hinh-nen-game-4k-dep-cho-may-tinh.jpg"
+                    alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Murugiah</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Game Profile</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      5000
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img src="https://wall.vn/wp-content/uploads/2020/04/hinh-nen-game-dep-62.jpg" alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Cyberpsychosis</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Game Profile</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      2500
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img src="https://genk.mediacdn.vn/GA8Ko1ApccccccccccccfqZTLfY3/Image/2012/11/wp_3_1024x768-eddbd.jpg"
+                    alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Murugiah</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Game Profile</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      6000
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img
+                    src="https://ggstorage.oxii.vn/images/oxii-2019-7-4/728x436/cau-hinh-may-tinh-choi-game-dau-truong-chan-ly-ngon-lanh-canh-dao-thumb.jpg"
+                    alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Cyberpsychosis</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Game Profile</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      1500
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-content">
+              <div class="section-three section-halloween">
+                <div class="section-background"></div>
+                <div class="sale-text">
+                  <p class="text-title">Autumn Sale 2021 Items</p>
+                  <a href="" class="btn-see-all">See All</a>
+                </div>
+
+                <div class="section-items">
+                  <div class="container-items">
+                    <div class="section-item">
+                      <div class="icon-top">
+                        <img src="./assets/image/icon-top-left.jpg" alt="">
+                      </div>
+                      <img src="https://msmobile.com.vn/upload_images/images/hinh-nen-game-full-hd-cho-laptop-3-1.jpg"
+                        alt="">
+                      <div class="footer-item">
+                        <div class="footer-text">
+                          <p class="title-item">Murugiah</p>
+                          <div class="sub-item">
+                            <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                              <path
+                                d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                              </path>
+                            </svg>
+                            <p>Game Profile</p>
+                          </div>
+                        </div>
+                        <div class="footer-price">
+                          <i class="fas fa-coins"></i>
+                          6000
+                        </div>
+                      </div>
+                    </div>
+                    <div class="section-item">
+                      <div class="icon-top">
+                        <img src="./assets/image/icon-top-left.jpg" alt="">
+                      </div>
+                      <img
+                        src="https://file.hstatic.net/1000231532/file/wallpaper__game_ps4_ghost_of_tsushima_2347f6711f2845a797ced0d49608da49_grande.jpg"
+                        alt="">
+                      <div class="footer-item">
+                        <div class="footer-text">
+                          <p class="title-item">Murugiah</p>
+                          <div class="sub-item">
+                            <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                              <path
+                                d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                              </path>
+                            </svg>
+                            <p>Game Profile</p>
+                          </div>
+                        </div>
+                        <div class="footer-price">
+                          <i class="fas fa-coins"></i>
+                          5000
+                        </div>
+                      </div>
+                    </div>
+                    <div class="section-item">
+                      <div class="icon-top">
+                        <img src="./assets/image/icon-top-left.jpg" alt="">
+                      </div>
+                      <img src="./assets/image/item-halloween.jpg" alt="">
+                      <div class="footer-item">
+                        <div class="footer-text">
+                          <p class="title-item">Murugiah</p>
+                          <div class="sub-item">
+                            <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                              <path
+                                d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                              </path>
+                            </svg>
+                            <p>Game Profile</p>
+                          </div>
+                        </div>
+                        <div class="footer-price">
+                          <i class="fas fa-coins"></i>
+                          5000
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-six">
+              <div class="title-section">
+                <p>Popular Animated Stickers</p>
+                <a href="" class="btn-see-all">See All (560)</a>
+                <div class="title-line"></div>
+                <div class="title-actions">
+                  <i class="fas fa-chevron-left"></i>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+
+              <div class="container-sticker">
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img
+                    src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/637310/979bb2133de5a89a3f7a0524f8a1d27163301f6d.png"
+                    alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Cat Cam talking</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Game Profile</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      5000
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img
+                    src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/983970/2711f4653dbba3b118a5d773fb64b749a78b7397.png"
+                    alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Murugiah</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Animated Sticker</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      3000
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img
+                    src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/1065970/4b61b9134e089780c87318e296ca6207f6f70567.png"
+                    alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Murugiah</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Animated Sticker</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      2000
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img
+                    src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/1065970/949a58d53630a6aac519f5e1fcd5880c2c3800cf.png"
+                    alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Salamash</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Animated Sticker</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      1000
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img
+                    src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/1065970/8a38f64b336e0543819538a023b2ae9454e1c665.png"
+                    alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Holo's face</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Animated Sticker</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      5000
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img
+                    src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/1348700/df5dc6769bb2088371b2ef7ca329d882b262639e.png"
+                    alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Myuri_type2</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Animated Sticker</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      1000
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-six">
+              <div class="title-section">
+                <p>New Featured Items</p>
+                <a href="" class="btn-see-all">See All (45)</a>
+                <div class="title-line"></div>
+                <div class="title-actions">
+                  <i class="fas fa-chevron-left"></i>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+
+              <div class="container-six">
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img
+                    src="https://1.bp.blogspot.com/-Fq8DR08GXMU/Xrpxg2ukuPI/AAAAAAAAk_0/qwbWHTcLrTkoiPg0QLoxXwhdjSuGvfeGACLcBGAsYHQ/s1600/Hinh-Nen-Game-Thu-Dep%2B%25283%2529.jpg"
+                    alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Murugiah</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Mini-Profile Background</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      2000
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img src="https://anhdephd.com/wp-content/uploads/2017/01/hinh-nen-game-battlefield-cho-desktop.jpg"
+                    alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Sara and Sayouri Sensual</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Mini-Profile Background</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      2000
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img src="https://genk.mediacdn.vn/2016/3-1479456413818.jpg" alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Murugiah</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Mini-Profile Background</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      2000
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img src="https://genk.mediacdn.vn/2016/25-1479456413834.jpg" alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Murugiah</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Mini-Profile Background</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      2000
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img src="https://genk.mediacdn.vn/2016/13-1479456413828.png" alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Murugiah</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Mini-Profile Background</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      2000
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img src="https://samseinfo.com/hinh-nen-game-kiem-hiep/imager_17923.jpg" alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Murugiah</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Mini-Profile Background</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      2000
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-six">
+              <div class="title-section">
+                <p>New Featured Items</p>
+                <a href="" class="btn-see-all">See All (45)</a>
+                <div class="title-line"></div>
+                <div class="title-actions">
+                  <i class="fas fa-chevron-left"></i>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+
+              <div class="container-sticker">
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img
+                    src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/1792490/9fee5262c237f680ab63f8ec78333cde65fe1818.png"
+                    alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Murugiah</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Game Profile</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      2000
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img
+                    src="https://media1.giphy.com/media/Pwq4pahl3LKWr9cAdg/giphy.gif?cid=6c09b9521b41635ff2f06b4d73b1245ecaf28fd96e27e10a&rid=giphy.gif&ct=s"
+                    alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Murugiah</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Chat Effect</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      1000
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img
+                    src="https://media2.giphy.com/media/aIbo2HwBvyS0vGGifR/giphy.gif?cid=ecf05e47vpyniwr4w748a9isd4vntysri4xuox0rjmf4mrm0&rid=giphy.gif&ct=s"
+                    alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Murugiah</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Chat Effect</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      1000
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img
+                    src="https://media0.giphy.com/media/fLd2CGehaPNAxLtB2T/giphy.gif?cid=ecf05e473igzr8ie92uyxn0f2aareiv2wwpy14y9s7kmfidp&rid=giphy.gif&ct=s"
+                    alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Murugiah</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Chat Effect</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      1000
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-six">
+              <div class="title-section">
+                <p>Popular Emoticons</p>
+                <a href="" class="btn-see-all">See All (145)</a>
+                <div class="title-line"></div>
+                <div class="title-actions">
+                  <i class="fas fa-chevron-left"></i>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+
+              <div class="container-six">
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img src="https://upanhmienphi.net/uploads/hinhanh/game-20170516125939azS27gkDLb.jpg" alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">:steamsunny:</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Emoticon</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      500
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img src="https://anhdephd.com/wp-content/uploads/2018/04/Hinh-nen-game-3d-dep-cho-may-585x390.jpg"
+                    alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">:steamlaughcry:</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Emoticon</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      100
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img
+                    src="https://anhdephd.com/wp-content/uploads/2017/01/tai-hinh-nen-game-battlefield-full-hd-585x390.jpg"
+                    alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Murugiah</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Emoticon</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      100
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img
+                    src="http://4.bp.blogspot.com/-c041VZe7sig/VKmGJ33xFCI/AAAAAAAASrw/Neynvoh6aRc/s1600/hinh-nen-gam-dep-nhat%2B(26).jpg"
+                    alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Murugiah</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Emoticon</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      100
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img
+                    src="https://3.bp.blogspot.com/-ZnUtyOTpeiY/VzaJPvyjvmI/AAAAAAAAAKQ/WAbdrtLhj-84RknAlBwAgd06tEvQxe0gwCLcB/s1600/tai-11-hinh-game-HD-lam-hinh-nen-may-tinh-1.jpg"
+                    alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Murugiah</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Emoticon</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      100
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-item">
+                  <div class="icon-top">
+                    <img src="./assets/image/icon-top-left.jpg" alt="" class="icon-top">
+                  </div>
+                  <img src="https://audiotruyenfull.com/bach-y-tong-quan/bach-y-tong-quan/" alt="">
+                  <div class="footer-item">
+                    <div class="footer-text">
+                      <p class="title-item">Murugiah</p>
+                      <div class="sub-item">
+                        <svg class="icon-item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46.1">
+                          <path
+                            d="M51.5,40.2l-6.8-11.7c2.4-2,3.9-5,3.9-8.4c0-6.1-4.9-11-11-11c-1.3,0-2.5,0.2-3.7,0.6L29.4,2c-0.7-1.2-2-2-3.4-2s-2.7,0.7-3.4,2l-4.1,7.1H6.6v20.6l-6,10.5c-0.7,1.2-0.7,2.7,0,4c0.7,1.2,2,2,3.4,2H48c1.4,0,2.7-0.7,3.4-2C52.2,42.9,52.2,41.4,51.5,40.2z M46.6,20.1c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S46.6,15.1,46.6,20.1z M8.6,11.1h8.7L8.6,26.2V11.1zM49.7,43.1c-0.4,0.6-1,1-1.7,1H4c-0.7,0-1.3-0.4-1.7-1c-0.4-0.6-0.4-1.3,0-2L24.3,3c0.4-0.6,1-1,1.7-1s1.3,0.4,1.7,1l4.4,7.6c-3.3,1.9-5.5,5.5-5.5,9.5c0,6.1,4.9,11,11,11c2,0,3.9-0.5,5.5-1.5l6.7,11.5C50.1,41.8,50.1,42.5,49.7,43.1z">
+                          </path>
+                        </svg>
+                        <p>Emoticon</p>
+                      </div>
+                    </div>
+                    <div class="footer-price">
+                      <i class="fas fa-coins"></i>
+                      100
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
+    integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- slick -->
+  <script type="text/javascript">
+    $('.one-time').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      adaptiveHeight: true
+    });
+  </script>
+
+  <!-- update js  -->
+  <!-- <script src="./js/headleJson.js"></script> -->
+  <script src="./js/app.js"></script>
+  <script src="./assets/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BàiKT2-Câu1</title>
+    <style>
+		*{
+			padding: 0px;	
+		}
+
+		.title{
+			text-align: center;
+		}
+		.formthanhvien{
+			display: flex;	
+		}
+		.trai{
+			width: 12%;	
+			padding-left: 420px;
+		}
+		#hoTenError,#passwordError, #rePasswordError, #sdtError
+        {
+			color:red;	
+		}
+	</style>
+	<script src="Cau1.js"></script>
+</head>
+    <body>
+        
+        <div class="title" style="font-size: 20px; font-weight: bold;">ĐĂNG KÝ THÀNH VIÊN</div><br />
+        <div class="formthanhvien">
+        	<div class="trai">
+            	<label for="hoten">Họ và tên</label><br /><br />
+                <label for="mk">Mật khẩu</label><br /><br />
+                <label for="remk">Khẳng định mật khẩu</label><br /><br />
+                <label for="date">Ngày tháng năm sinh</label><br /><br />
+                <label for="sdt">Số điện thoại</label><br /><br />
+                <label for="anh">Đường dẫn ảnh</label><br /><br />
+            </div>
+            <div class="phai">
+            	<form name="formthanhvien">
+                	<input type="text" id="hoten" placeholder="Nhập họ và tên" onBlur="checkHoTen()">
+                    <span id="hoTenError"></span><br /><br />
+                    <input type="password" id="pass" onBlur="checkPass()"/>
+                    <span id="passwordError"></span><br /><br />
+                    <input type="password" id="repass" onBlur="checkRePass()"/>
+                    <span id="rePasswordError"></span><br /><br />
+                    <input type="date" id="ngay" /><br /><br />
+                    <input type="text" id="sdt" onBlur="checkSDT()"/>
+                    <span id="sdtError"></span><br /><br />
+                    <input type="file" value="Chọn tệp" /><br /><br />
+                    <input type="submit" value="Đăng ký" />
+                    <input type="reset" value="Huỷ bỏ" />
+                </form>
+            </div>
+  		</div>
+        
+    </body>
+</html>

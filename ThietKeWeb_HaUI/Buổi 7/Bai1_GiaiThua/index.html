@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action=""> -->
+        <label for="iput-text">tính giai thừa </label>
+        <input type="text" id ="iput-text" value="">
+        <button class = "btn btnCheck">Check</button>
+        <button class = "btn btnReset">reset</button>
+    <!-- </form> -->
+    <script>
+        const texts = document.querySelector('#iput-text');
+        const check = document.querySelector('.btnCheck');
+        const reset = document.querySelector('.btnReset');
+        
+        function factorial(number) {
+            if(number>0)
+                return number * factorial(number-1);
+            return 1;
+                
+        }
+        
+        function calculator() {
+            check.onclick = function () {
+                if(texts.value>0)
+                    alert(factorial(texts.value))
+                else 
+                    alert("Nhap lai");
+            }
+        }
+        calculator();
+
+    </script>
+</body>
+
+
+</html>

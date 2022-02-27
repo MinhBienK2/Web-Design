@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input{
+            margin:5px ;
+        }
+        p{
+            margin:0;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Hộp text</h2>
+    <form action="">
+        <label for="fname">Full Name :</label>
+        <input type="text" value="" id="fname">
+        <p id="errorName">Chỉ được kí tự</p>
+        <label for="password">password :</label>
+        <input type="password" id = "password" value="">
+        <label for="comfirm">comfirm :</label>
+        <input type="password" id = "comfirm" value="">
+        <p id="errorPass">Tối thiểu 6 kí tự</p>
+        <label for="phoneNumber">SDT</label>
+        <input type="text" id = "phoneNumber" value="">
+        <p id="errorPhone"></p>
+        <label for="gender">Gender : </label>
+        <label for="male">male</label>
+        <input type="radio" name = "male" id = "male" >
+        <label for="female">female</label>
+        <input type="radio" name = "female" id = "female">
+        <br>
+        <label for="interests">Interests : </label>
+        <br>
+        <label for="music">music</label>
+        <input type="checkbox" id= "music" value = "music">
+        <br>
+        <label for="art">art</label>
+        <input type="checkbox" id= "art" value = "art">
+        <br>
+        <label for="sport">sport</label>
+        <input type="checkbox" id= "sport" value = "sport">
+        <br>
+        <label for="introduceYourself">Introduce Yourself</label>
+        <br>
+        <textarea name="introduceYourself" id="introduce" cols="30" rows="10"></textarea>
+        <br>
+        <button id = "submit">Submit</button>
+    </form>
+
+    <script>
+        const $= document.querySelector.bind(document);
+        const fname = $('#fname')
+        const passwod = $('#password')
+        const phoneNum = $('#phoneNum')
+        const male = $('#male')
+        const female = $('#female')
+        const music = $('#music')
+        const art = $('#art')
+        const sport = $('#sport')
+        const introduce = $('#introduce')
+        const submit = $('#submit')
+        console.log("hello")
+        fname.onchange = function () {
+            if(/[a-zA-Z]+/g.test(this.value))
+                console.log('hello')
+        }
+    </script>
+</body>
+</html>

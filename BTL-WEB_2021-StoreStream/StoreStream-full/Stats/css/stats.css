@@ -1,0 +1,212 @@
+.search {
+    background-color: #16202D;
+}
+
+.main__start{
+    background-color: #16202D;
+}
+.breadcrumbs {
+    color: #56707f;
+    font-size: 12px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    padding-top: 10px;
+}
+
+.pageheader {
+    color: #ffffff;
+    font-size: 34px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    text-shadow: 1px 1px 0 rgb(0 0 0 / 40%);
+    margin-top: -4px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    letter-spacing: 0.03em;
+    padding-top: 2px;
+}
+
+.body_text {
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.block_header {
+    color: #67c1f5;
+    font-size: 18px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+/* chart */
+.block_content.block_content_inner.dark {
+    background-color: black;
+    padding: 12px;
+}
+
+.block_content.block_content_inner {
+    padding: 12px;
+}
+
+.chart_center {
+    margin: 0 auto;
+    max-width: 670px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.chartdiv {
+    width: auto;
+    min-width: 600px;
+    height: 300px;
+    background-color: black;
+    margin-bottom: 80px;
+}
+
+.flot-tick-label, .legendLabel {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #8f98a0;
+}
+
+.flot-x-axis .flot-tick-label {
+    white-space: nowrap;
+    transform: translate( 45px,90px ) rotate(-90deg);
+    transform-origin: top left;
+    text-align: right;
+    width: 100px;
+}
+
+.statsTop{
+    color:#8f98a0;
+}
+.statsTop td {
+    padding-top: 2px;
+    padding-bottom: 3px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+.statsTopHi {
+    color: #66c0f4;
+    font-weight: bold;
+}
+
+.users_count_table .users_count {
+    padding-left: 12px;
+}
+
+.statsTopSmall {
+    font-size: 11px;
+    color: #8f98a0;
+}
+.body_text {
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: #8f98a0;
+}
+
+.chartLegend{
+    position: relative;
+}
+
+.chart_center-img{
+    max-width:670px;
+    position: absolute;
+    top: -58px;
+    left: 51px;
+    z-index: 2;
+}
+
+.chart_center {
+    overflow-x: hidden;
+}
+
+.content.block_content_inner-p span{
+    color: #67c1f5;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.player_count_row{
+    height: 18px;
+    margin-bottom: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.currentServers{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c6d4df;
+    font-size: 12px;
+}
+
+.currentServers-big{
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    padding-left: 20px;
+    
+}
+.padding-left-35px{
+    padding-left:35px;
+}
+.padding-left-20px{
+    padding-left:20px;
+}
+
+/* end chart */
+
+#more_player_count_link{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c6d4df;
+    font-size: 12px;
+    margin:20px 0 10px 0;
+}
+
+div.rightcol {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c6d4df;
+    font-size: 12px;
+    width: 308px;
+    margin-left: 14px;
+    float: right;
+}
+.block_header {
+    color: #67c1f5;
+    font-size: 18px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.stats_links .block_content.block_content_inner {
+    padding-bottom: 0px;
+}
+
+.block_content.block_content_inner {
+    padding: 12px;
+}
+.block_content a.linkbar {
+    font-size: 13px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    display: block;
+    color: #ffffff;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.row.page_content{
+    margin-top:20px;
+}
